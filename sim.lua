@@ -2447,6 +2447,25 @@ local function write_sim_summary(summary_filename, run_meta, per_pair, globalAgg
   _summ_line(f, "First player is fixed to P1 every round in this run.")
   _summ_line(f, "")
 
+  -- === How-to-read guide (for humans & AI) ===
+  local HOW_TO_READ = [[
+AI_README_START
+How to read this summary: The file is plain text with four human-friendly sections followed by a JSON tail.
+1) "By Difficulty Pair" shows results per (P1 difficulty, P2 difficulty): Games, Wins, and averages; key rates include
+   HitRate = hits/attempts, WastedAtkRate = wasted/attempts, K/D = captures_for / captures_against,
+   ShieldAvgLife = average turns a broken shield had been up.
+2) "Global Totals" aggregates across all games. Progress is signed net movement toward finish (more positive = more
+   forward for that side). "Threat Δ" counts turns where adjacent-enemy pressure went up/down/flat.
+3) "Per-Match Rows (CSV)" is a comma-separated table with a header; rates are decimals in [0,1].
+4) "Healthchecks" lists quick sanity checks.
+Tail JSON: between "SUMMARY_JSON_START" and "SUMMARY_JSON_END" there is a single JSON object: { run, per_pair:[{P1,P2,summary}], global:{...} }.
+Implementation note: In this run, P1 always acts first each round.
+AI_README_END
+]]
+  for line in HOW_TO_READ:gmatch("[^\r\n]+") do _summ_line(f, line) end
+  _summ_line(f, "")
+
+
   if SUMMARY_INCLUDE_BY_DIFFICULTY then
     _summ_line(f, "== By Difficulty Pair ==")
     for _,pp in ipairs(per_pair) do
