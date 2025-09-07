@@ -1,0 +1,409 @@
+-- sim.lua (merged with AI tweaks)
+-- Updated to alternate initiative per match and per round, adjust placement and planning order,
+-- update summary reporting, and AI behavior changes (decide_if_buff, scoreOption).
+
+local math = math
+local os = os
+local ipairs = ipairs
+local tostring = tostring
+local tonumber = tonumber
+
+-- Configuration flags
+local MAX_ROUNDS_PER_MATCH = 10
+local REROLL_SEED_EACH_MATCH = true
+local SEED_BASE = 12345
+local DEBUG_BUFF = false
+
+-- Random seed helper (platform dependent; placeholder deterministic generator)
+local function _seed_rng(s)
+  math.randomseed(s)
+end
+
+-- Placeholder world constructor and helpers (simplified)
+local function new_world()
+  return {
+    round = 1,
+    phase = "Setup",
+    stats = { rounds = 0 },
+    matchConst = {},
+    firstPlayer = 1,
+    action_log = {},
+    buff_debug = {},
+    ai_debug = {},
+    _draw_card = function(world, deck) return nil end,
+    _give_card = function(world, side, card, flag, reason) end,
+  }
+end
+
+local function build_struct_snapshot(world)
+  return { round = world.round, phase = world.phase, firstPlayer = world.firstPlayer }
+end
+
+local function build_match_summary(world, stats)
+  return { stats = stats, rounds = world.round, winner = stats.winner }
+end
+
+local function winner_or_nil(world)
+  -- placeholder
+  return nil
+end
+
+local function _place_token_initial(world)
+  -- placeholder
+end
+
+local function _respawn_left_to_right(world)
+  -- placeholder
+end
+
+local function _reset_stacks_for_new_round(world)
+  -- placeholder
+end
+
+local function _buffdbg(world, data)
+  if not world.buff_debug then world.buff_debug = {} end
+  table.insert(world.buff_debug, data)
+end
+
+local function _end_round_cleanup(world)
+  -- placeholder
+end
+
+local function action_step(world, side, dThis, dOther, writer)
+  -- placeholder: returns whether an action occurred
+  return false
+end
+
+local function _give_initiative_summary(total_matches)
+  -- returns counts of initiatives for P1 and P2 when alternating starting side per match
+  local p1 = 0
+  local p2 = 0
+  for i = 1, total_matches do
+    local matchFirst = ((i % 2) == 1) and 1 or 2
+    -- Each match alternates which side starts each round. For initiative summary,
+    -- we count which side has initiative on round 1. If matches have multiple rounds,
+    -- the per-round initiative alternates starting from matchFirst. For a single summary
+    -- we report how many matches start with P1/P2.
+    if matchFirst == 1 then p1 = p1 + 1 else p2 = p2 + 1 end
+  end
+  return { P1 = p1, P2 = p2 }
+end
+
+-- Build all matches summary: updated headers and initiative counts based on alternation
+local function build_all_matches_summary(matches, total_matches)
+  local initiative_counts = _give_initiative_summary(total_matches or #matches)
+  local summary = {
+    total_matches = total_matches or #matches,
+    initiative = initiative_counts,
+    match_summaries = matches,
+  }
+  return summary
+end
+
+-- Placement: use match starting side to pick first in placement, alternating across matches.
+-- world.firstPlayer should already be set to the match starting side prior to calling.
+local function placement_in_turn_order(world, matchStartingSide, dP1, dP2, writer)
+  -- matchStartingSide is expected to be the initial firstPlayer for round 1 of this match
+  -- We will use it to decide who places first in placement step.
+  local pick_order = {}
+  if matchStartingSide == 1 then
+    pick_order = { {1, dP1}, {2, dP2} }
+  else
+    pick_order = { {2, dP2}, {1, dP1} }
+  end
+
+  -- Perform placement picks in that order. Alternate picks within placement if necessary.
+  for _, entry in ipairs(pick_order) do
+    local side, d = entry[1], entry[2]
+    if writer then
+      writer:section(("Placement - Side %d"):format(side))
+    end
+    -- call player's placement routine if exists:
+    if d and d.placement then
+      d:placement(world, side, writer)
+    end
+  end
+
+  -- If placement requires additional alternating picks (e.g., multiple tokens), alternate starting from matchStartingSide
+  -- Placeholder for additional logic.
+end
+
+-- Plan order: When alternating firstPlayer, use it to drive pick order each round.
+local function Plan_in_turn_order(world, roundFirstPlayer, dP1, dP2, writer)
+  -- roundFirstPlayer determines which side picks first this round.
+  world.firstPlayer = roundFirstPlayer
+  if writer then writer:section("Planning") end
+
+  local order = {}
+  if world.firstPlayer == 1 then
+    order = { {1, dP1}, {2, dP2} }
+  else
+    order = { {2, dP2}, {1, dP1} }
+  end
+
+  for _, entry in ipairs(order) do
+    local side, d = entry[1], entry[2]
+    if d and d.plan then
+      d:plan(world, side, writer)
+    end
+  end
+end
+
+-- Main match runner: apply provided suggested edit
+local function run_match(dP1, dP2, writer, match_index)
+  if REROLL_SEED_EACH_MATCH and SEED_BASE then
+    _seed_rng((SEED_BASE + (match_index or 0)) % 2^31)
+  else
+    _seed_rng(SEED_BASE)
+  end
+  local world = new_world()
+  world_ref = world
+  do
+    local t = os.time()
+    -- simple, deterministic mixes so P1/P2 aren’t identical even if called in same second
+    world.matchConst.P1 = ((t * 1103515245 + 12345) % 2^31) / 2^31
+    world.matchConst.P2 = ((t * 1664525     + 1013904223) % 2^31) / 2^31
+  end
+
+  -- Compute who starts this match and alternate per round
+  local matchFirst = (((match_index or 1) % 2) == 1) and 1 or 2
+
+  -- Initialise token + buff deck
+  _place_token_initial(world)
+
+  -- initial draws
+  for i=1,2 do
+    world._give_card(world, 1, world._draw_card(world.buff), false, "InitialDeal")
+    world._give_card(world, 2, world._draw_card(world.buff), false, "InitialDeal")
+  end
+
+  -- Set first player for round 1 based on match parity
+  world.firstPlayer = matchFirst
+  world.stats.initiative = matchFirst
+
+  if writer then
+    writer:match(match_index or 1)
+    writer:T0(build_struct_snapshot(world))
+    writer:round(world.round)
+    writer:section("Placement")
+  end
+
+  placement_in_turn_order(world, world.firstPlayer, dP1, dP2, writer)
+
+  local winner = nil
+  local first_round = true
+  while world.round <= MAX_ROUNDS_PER_MATCH do
+    if not first_round and writer then writer:round(world.round) end
+
+    _respawn_left_to_right(world)
+    _reset_stacks_for_new_round(world)
+    _buffdbg(world, { event="round_start" })
+
+    -- Alternate first player each round; match parity decides who starts on odd rounds
+    if matchFirst == 1 then
+      world.firstPlayer = (world.round % 2 == 1) and 1 or 2
+    else
+      world.firstPlayer = (world.round % 2 == 1) and 2 or 1
+    end
+
+    Plan_in_turn_order(world, world.firstPlayer, dP1, dP2, writer)
+    _buffdbg(world, { event="after_plan" })
+
+    if writer then writer:section("Battle") end
+    world.phase = "Battle Phase"
+    local acted = true
+    local turnSide = world.firstPlayer
+    world.lastActorSide = nil
+    while acted do
+      acted = false
+      if turnSide == 1 then
+        if action_step(world, 1, dP1, dP2, writer) then
+          acted = true
+          if writer then writer:tick(build_struct_snapshot(world)) end
+          local w = winner_or_nil(world); if w then winner = w; break end
+          turnSide = 2
+        end
+        if action_step(world, 2, dP1, dP2, writer) then
+          acted = true
+          if writer then writer:tick(build_struct_snapshot(world)) end
+          local w = winner_or_nil(world); if w then winner = w; break end
+          turnSide = 1
+        end
+      else
+        if action_step(world, 2, dP1, dP2, writer) then
+          acted = true
+          if writer then writer:tick(build_struct_snapshot(world)) end
+          local w = winner_or_nil(world); if w then winner = w; break end
+          turnSide = 1
+        end
+        if action_step(world, 1, dP1, dP2, writer) then
+          acted = true
+          if writer then writer:tick(build_struct_snapshot(world)) end
+          local w = winner_or_nil(world); if w then winner = w; break end
+          turnSide = 2
+        end
+      end
+    end
+
+    world.stats.rounds = world.stats.rounds + 1
+    _end_round_cleanup(world)
+
+    if winner then break end
+    world.round = world.round + 1
+    first_round = false
+  end
+
+  if not winner then world.stats.timeout=true end
+  world.stats.winner = winner or "TIMEOUT"
+
+  -- Append per-match telemetry blocks
+  local ms = build_match_summary(world, world.stats)
+  if writer then
+    writer:append_json_block(("MATCH_SUMMARY (%d)"):format(tonumber(match_index) or 1), ms)
+    writer:dump_jsonl(("ACTION_TIMELINE_JSONL (%d)"):format(tonumber(match_index) or 1), world.action_log)
+    if DEBUG_BUFF then
+      writer:dump_jsonl(("BUFF_DEBUG_JSONL (%d)"):format(tonumber(match_index) or 1), world.buff_debug or {})
+    end
+    if world.ai_debug and #world.ai_debug>0 then
+      writer:dump_jsonl(("AI_DEBUG_JSONL (%d)"):format(tonumber(match_index) or 1), world.ai_debug)
+    end
+  end
+
+  return world.stats, ms
+end
+
+-- Example top-level tournament runner that uses build_all_matches_summary
+local function run_tournament(dP1, dP2, writer, total_matches)
+  total_matches = total_matches or 10
+  local match_summaries = {}
+  for mi = 1, total_matches do
+    local stats, ms = run_match(dP1, dP2, writer, mi)
+    table.insert(match_summaries, ms)
+  end
+  local all_summary = build_all_matches_summary(match_summaries, total_matches)
+  if writer then
+    writer:append_json_block("ALL_MATCHES_SUMMARY", all_summary)
+  end
+  return all_summary
+end
+
+-- AI Code tweaks: decide_if_buff and scoreOption implementations
+-- These are provided as local functions that AI players can call.
+
+-- decide_if_buff:
+-- - Spend assigned buff on last available action to avoid waste
+-- - Minor guard on must-spend
+local function decide_if_buff(world, side, assigned_buff, action_list)
+  -- assigned_buff: table with buff info or nil
+  -- action_list: list of possible actions available this side this turn
+  if not assigned_buff then return nil end
+
+  -- If there are no available actions, do not spend
+  if not action_list or #action_list == 0 then
+    return nil
+  end
+
+  -- Determine if any action is forced/must-spend
+  local must_spend = assigned_buff.must_spend or false
+
+  -- Prefer to save buff unless this is the last available action opportunity.
+  -- We treat "last available action" as: action_list contains only passive or zero-impact moves,
+  -- or the assigned_buff expires at end of turn/round (flag on buff).
+  local expires_now = assigned_buff.expires_now
+  local is_last_action_opportunity = expires_now or (#action_list == 1) or must_spend
+
+  if is_last_action_opportunity then
+    -- choose the best action to apply buff to: prioritize damaging or vital actions
+    local best_action = nil
+    local best_score = -1e9
+    for _, act in ipairs(action_list) do
+      local score = 0
+      if act.type == "attack" then score = score + (act.damage or 0) * 10 end
+      if act.type == "buff_target" then score = score + 5 end
+      if act.impact and act.impact > 0 then score = score + act.impact * 2 end
+      -- small randomness to break ties deterministically via world.matchConst
+      score = score + (world.matchConst and (world.matchConst.P1 + world.matchConst.P2)/2 or 0)
+      if score > best_score then
+        best_score = score
+        best_action = act
+      end
+    end
+    if best_action then
+      return { action = best_action, use_buff = true }
+    end
+  end
+
+  -- Otherwise, defer spending buff
+  return nil
+end
+
+-- scoreOption:
+-- - Penalize unreachable/illegal attacks more strongly
+-- - Small boost to defend-when-threatened for P1
+local function scoreOption(world, side, option)
+  -- option: table describing the potential action/option
+  -- Returns numeric score; higher is better.
+  local score = 0
+
+  -- Base scoring by option type
+  if option.type == "attack" then
+    if option.reachable == false then
+      -- Strong penalty for unreachable attacks
+      score = score - 1000
+    else
+      score = score + (option.damage or 0) * 10
+      -- slight penalty for high-cost options to prefer efficient plays
+      score = score - (option.cost or 0) * 2
+    end
+    -- illegal actions are heavily penalized
+    if option.illegal then score = score - 2000 end
+  elseif option.type == "defend" then
+    -- Defend gets a small boost when threatened, especially for P1 (balancing)
+    local threat = option.threat or 0
+    score = score + 5 + threat * 8
+    if side == 1 then
+      -- slight priority for P1 to defend when threatened
+      score = score + 2
+    end
+  elseif option.type == "move" then
+    -- Moving toward objective is good; moving away is neutral/penalized
+    score = score + (option.utility or 0) * 3
+    if option.to_unsafe then score = score - 20 end
+  elseif option.type == "use_buff" then
+    if option.waste then
+      score = score - 500
+    else
+      score = score + (option.value or 0) * 6
+    end
+  else
+    -- generic scoring
+    score = score + (option.value or 0) * 2
+  end
+
+  -- Penalize options that would result in immediate illegal state or self-kill strongly
+  if option.results_in_illegal_state then score = score - 5000 end
+  if option.results_in_self_kill then score = score - 10000 end
+
+  -- small tie-breakers using deterministic matchConst
+  if world and world.matchConst then
+    score = score + (world.matchConst.P1 or 0) * 1.0
+    score = score - (world.matchConst.P2 or 0) * 0.5
+  end
+
+  return score
+end
+
+-- Exported API
+local sim = {
+  run_match = run_match,
+  run_tournament = run_tournament,
+  build_all_matches_summary = build_all_matches_summary,
+  placement_in_turn_order = placement_in_turn_order,
+  Plan_in_turn_order = Plan_in_turn_order,
+  -- AI helpers
+  decide_if_buff = decide_if_buff,
+  scoreOption = scoreOption,
+}
+
+return sim
+

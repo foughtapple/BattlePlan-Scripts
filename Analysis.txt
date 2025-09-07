@@ -1,0 +1,13 @@
+﻿Summary from latest sim (250 games)
+- Wins: P1=97 (38.8%), P2=153 (61.2%), TO=0
+- Hit rate: P1=0.037, P2=0.107; K/D: P1=0.336, P2=2.977
+- Wasted attack rate: P1≈0.992, P2≈0.920
+- Progress (net toward finish): P1=6578, P2=6370; Token pickups (move): P1=376, P2=327
+
+Interpretation
+- Clear Player-2 advantage driven by much higher hit rate and K/D. P2 converts attacks far better and wastes fewer.
+- First-player was fixed to P1 in this run, so initiative alone does not explain the bias; likely sources are P2-native heuristics and mirror-side handling.
+
+Next focus
+- Normalize starter fairness: alternate initiative by match and by round so both sides get equal first picks and first reveals over time.
+- Then revisit aggregator/summary to reflect true initiative counts and continue tuning P1 attack selection and buff spend on last actions.

@@ -1,0 +1,1 @@
+- Reviewed AI performance as Player 1 consistently loses against Player 2. Re-evaluated strategies in AI Code to improve performance by prioritizing efficient action selection and buff usage.
