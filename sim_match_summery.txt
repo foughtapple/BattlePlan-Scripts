@@ -1,0 +1,453 @@
+=== BattlePlan Simulation Summary  ===
+Timestamp UTC: 2025-09-07T01:10:57Z
+Config: GAMES_PER_PAIR=10  DEBUG_BUFF=false  JSON_BLOCKS=false
+Difficulty Mode: Sweep P1 in [1,2,3,4,5] × P2 in [1,2,3,4,5]
+First player is fixed to P1 every round in this run.
+
+== By Difficulty Pair ==
+P1=1 vs P2=1 — Games=10  W(P1)=3  W(P2)=7  TO=0
+  Avg Rounds=7.70  Avg Turns=153.30
+  HitRate P1=0.011  P2=0.061
+  WastedAtkRate P1=1.040  P2=0.994
+  K/D P1=0.182  P2=5.500
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=1 vs P2=2 — Games=10  W(P1)=6  W(P2)=4  TO=0
+  Avg Rounds=8.30  Avg Turns=163.60
+  HitRate P1=0.016  P2=0.086
+  WastedAtkRate P1=1.005  P2=0.941
+  K/D P1=0.188  P2=5.333
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=1 vs P2=3 — Games=10  W(P1)=5  W(P2)=5  TO=0
+  Avg Rounds=9.00  Avg Turns=168.90
+  HitRate P1=0.038  P2=0.116
+  WastedAtkRate P1=0.984  P2=0.916
+  K/D P1=0.318  P2=3.143
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=1 vs P2=4 — Games=10  W(P1)=2  W(P2)=8  TO=0
+  Avg Rounds=8.70  Avg Turns=176.40
+  HitRate P1=0.030  P2=0.126
+  WastedAtkRate P1=0.990  P2=0.888
+  K/D P1=0.231  P2=4.333
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=1 vs P2=5 — Games=10  W(P1)=5  W(P2)=5  TO=0
+  Avg Rounds=8.70  Avg Turns=167.50
+  HitRate P1=0.011  P2=0.111
+  WastedAtkRate P1=1.028  P2=0.915
+  K/D P1=0.095  P2=10.500
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=2 vs P2=1 — Games=10  W(P1)=3  W(P2)=7  TO=0
+  Avg Rounds=7.50  Avg Turns=152.10
+  HitRate P1=0.041  P2=0.126
+  WastedAtkRate P1=0.994  P2=0.891
+  K/D P1=0.318  P2=3.143
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=2 vs P2=2 — Games=10  W(P1)=2  W(P2)=8  TO=0
+  Avg Rounds=8.80  Avg Turns=180.80
+  HitRate P1=0.055  P2=0.088
+  WastedAtkRate P1=0.980  P2=0.928
+  K/D P1=0.647  P2=1.545
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=2 vs P2=3 — Games=10  W(P1)=4  W(P2)=6  TO=0
+  Avg Rounds=8.30  Avg Turns=161.80
+  HitRate P1=0.063  P2=0.115
+  WastedAtkRate P1=0.971  P2=0.914
+  K/D P1=0.550  P2=1.818
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=2 vs P2=4 — Games=10  W(P1)=6  W(P2)=4  TO=0
+  Avg Rounds=9.00  Avg Turns=178.60
+  HitRate P1=0.052  P2=0.123
+  WastedAtkRate P1=0.984  P2=0.913
+  K/D P1=0.417  P2=2.400
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=2 vs P2=5 — Games=10  W(P1)=3  W(P2)=7  TO=0
+  Avg Rounds=9.40  Avg Turns=179.90
+  HitRate P1=0.036  P2=0.179
+  WastedAtkRate P1=0.984  P2=0.851
+  K/D P1=0.200  P2=5.000
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=3 vs P2=1 — Games=10  W(P1)=3  W(P2)=7  TO=0
+  Avg Rounds=7.70  Avg Turns=144.70
+  HitRate P1=0.020  P2=0.046
+  WastedAtkRate P1=1.007  P2=0.987
+  K/D P1=0.429  P2=2.333
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=3 vs P2=2 — Games=10  W(P1)=4  W(P2)=6  TO=0
+  Avg Rounds=9.10  Avg Turns=181.00
+  HitRate P1=0.032  P2=0.132
+  WastedAtkRate P1=0.995  P2=0.898
+  K/D P1=0.231  P2=4.333
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=3 vs P2=3 — Games=10  W(P1)=5  W(P2)=5  TO=0
+  Avg Rounds=8.80  Avg Turns=171.10
+  HitRate P1=0.083  P2=0.138
+  WastedAtkRate P1=0.945  P2=0.890
+  K/D P1=0.600  P2=1.667
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=3 vs P2=4 — Games=10  W(P1)=4  W(P2)=6  TO=0
+  Avg Rounds=9.70  Avg Turns=186.80
+  HitRate P1=0.072  P2=0.175
+  WastedAtkRate P1=0.928  P2=0.869
+  K/D P1=0.406  P2=2.462
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=3 vs P2=5 — Games=10  W(P1)=4  W(P2)=6  TO=0
+  Avg Rounds=9.00  Avg Turns=176.20
+  HitRate P1=0.027  P2=0.128
+  WastedAtkRate P1=1.000  P2=0.904
+  K/D P1=0.208  P2=4.800
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=4 vs P2=1 — Games=10  W(P1)=1  W(P2)=9  TO=0
+  Avg Rounds=7.70  Avg Turns=153.90
+  HitRate P1=0.046  P2=0.090
+  WastedAtkRate P1=0.994  P2=0.932
+  K/D P1=0.500  P2=2.000
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=4 vs P2=2 — Games=10  W(P1)=4  W(P2)=6  TO=0
+  Avg Rounds=9.40  Avg Turns=180.20
+  HitRate P1=0.046  P2=0.103
+  WastedAtkRate P1=0.969  P2=0.918
+  K/D P1=0.450  P2=2.222
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=4 vs P2=3 — Games=10  W(P1)=2  W(P2)=8  TO=0
+  Avg Rounds=8.70  Avg Turns=173.20
+  HitRate P1=0.016  P2=0.149
+  WastedAtkRate P1=1.005  P2=0.877
+  K/D P1=0.103  P2=9.667
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=4 vs P2=4 — Games=10  W(P1)=1  W(P2)=9  TO=0
+  Avg Rounds=9.30  Avg Turns=187.10
+  HitRate P1=0.044  P2=0.118
+  WastedAtkRate P1=0.980  P2=0.901
+  K/D P1=0.360  P2=2.778
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=4 vs P2=5 — Games=10  W(P1)=1  W(P2)=9  TO=0
+  Avg Rounds=8.70  Avg Turns=184.10
+  HitRate P1=0.025  P2=0.138
+  WastedAtkRate P1=1.020  P2=0.910
+  K/D P1=0.172  P2=5.800
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=5 vs P2=1 — Games=10  W(P1)=4  W(P2)=6  TO=0
+  Avg Rounds=7.90  Avg Turns=155.00
+  HitRate P1=0.040  P2=0.097
+  WastedAtkRate P1=0.977  P2=0.926
+  K/D P1=0.412  P2=2.429
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=5 vs P2=2 — Games=10  W(P1)=3  W(P2)=7  TO=0
+  Avg Rounds=8.80  Avg Turns=174.10
+  HitRate P1=0.028  P2=0.086
+  WastedAtkRate P1=0.994  P2=0.957
+  K/D P1=0.313  P2=3.200
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=5 vs P2=3 — Games=10  W(P1)=5  W(P2)=5  TO=0
+  Avg Rounds=8.90  Avg Turns=172.70
+  HitRate P1=0.074  P2=0.122
+  WastedAtkRate P1=0.963  P2=0.904
+  K/D P1=0.609  P2=1.643
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=5 vs P2=4 — Games=10  W(P1)=4  W(P2)=6  TO=0
+  Avg Rounds=8.80  Avg Turns=168.40
+  HitRate P1=0.029  P2=0.131
+  WastedAtkRate P1=0.988  P2=0.903
+  K/D P1=0.217  P2=4.600
+  ShieldAvgLife P1=0.00  P2=0.00
+
+P1=5 vs P2=5 — Games=10  W(P1)=6  W(P2)=4  TO=0
+  Avg Rounds=8.90  Avg Turns=166.40
+  HitRate P1=0.042  P2=0.119
+  WastedAtkRate P1=0.994  P2=0.898
+  K/D P1=0.333  P2=3.000
+  ShieldAvgLife P1=0.00  P2=0.00
+
+== Global Totals ==
+Games=250  Wins: P1=90 P2=160 TO=0
+Avg Rounds=8.67  Avg Turns=170.31
+HitRate P1=0.039  P2=0.117
+WastedAtkRate P1=0.989  P2=0.912
+Progress (net toward finish): P1=6504  P2=6306
+Threat Δ (up/down/flat) P1=1262/1018/18692  P2=1259/1435/18360
+K/D P1=0.329  P2=3.039
+RevealsUse P1=0.934  P2=0.930
+Buffs Drawn P1=764 P2=710  Assigned P1=739 P2=697
+Token pickups (move): P1=331 P2=312
+
+== Per-Match Rows (CSV) ==
+pairIndex,matchIndex,P1_diff,P2_diff,winner,rounds,turns,hitRateP1,hitRateP2,capturesP1,capturesP2,wastedP1,wastedP2,seed
+1,1,1,1,PLAYER 1,9,205,0.0400,0.0800,1,2,26,23,1757207392
+1,2,1,1,COMPUTER,8,154,0.0000,0.0000,0,0,18,18,1757207393
+1,3,1,1,COMPUTER,7,150,0.0000,0.0000,0,0,24,24,1757207394
+1,4,1,1,COMPUTER,6,130,0.0000,0.1176,0,2,17,15,1757207395
+1,5,1,1,COMPUTER,8,154,0.0556,0.0526,1,1,18,19,1757207396
+1,6,1,1,COMPUTER,9,190,0.0000,0.2083,0,5,24,20,1757207397
+1,7,1,1,PLAYER 1,7,127,0.0000,0.0000,0,0,16,17,1757207398
+1,8,1,1,COMPUTER,8,156,0.0000,0.0000,0,0,16,18,1757207399
+1,9,1,1,COMPUTER,8,132,0.0000,0.0833,0,1,10,12,1757207400
+1,10,1,1,PLAYER 1,7,135,0.0000,0.0000,0,0,12,12,1757207401
+2,11,1,2,PLAYER 1,8,163,0.0000,0.0000,0,0,19,18,1757207402
+2,12,1,2,PLAYER 1,8,155,0.1000,0.0000,2,0,19,18,1757207403
+2,13,1,2,COMPUTER,10,202,0.0000,0.1250,0,3,22,21,1757207404
+2,14,1,2,COMPUTER,8,156,0.0000,0.1053,0,2,17,19,1757207405
+2,15,1,2,PLAYER 1,8,137,0.0000,0.0000,0,0,15,16,1757207406
+2,16,1,2,PLAYER 1,7,145,0.0000,0.0000,0,0,18,18,1757207407
+2,17,1,2,COMPUTER,8,170,0.0000,0.2632,0,5,17,15,1757207408
+2,18,1,2,COMPUTER,10,188,0.0500,0.1111,1,2,19,16,1757207409
+2,19,1,2,PLAYER 1,7,153,0.0000,0.0500,0,1,21,20,1757207410
+2,20,1,2,PLAYER 1,9,167,0.0000,0.1765,0,3,18,14,1757207411
+3,21,1,3,PLAYER 1,11,217,0.0370,0.1923,1,5,27,21,1757207412
+3,22,1,3,COMPUTER,10,188,0.0526,0.1818,1,4,18,19,1757207413
+3,23,1,3,COMPUTER,9,192,0.0400,0.1071,1,3,25,26,1757207414
+3,24,1,3,PLAYER 1,8,131,0.1000,0.2000,1,2,10,9,1757207415
+3,25,1,3,COMPUTER,8,156,0.0000,0.1111,0,2,17,16,1757207416
+3,26,1,3,COMPUTER,9,190,0.0400,0.0417,1,1,25,25,1757207417
+3,27,1,3,PLAYER 1,10,189,0.0500,0.0500,1,1,19,19,1757207418
+3,28,1,3,PLAYER 1,7,127,0.0000,0.0625,0,1,15,15,1757207419
+3,29,1,3,PLAYER 1,9,151,0.0714,0.0000,1,0,13,14,1757207420
+3,30,1,3,COMPUTER,9,148,0.0000,0.2500,0,3,10,10,1757207421
+4,31,1,4,COMPUTER,9,176,0.0000,0.1053,0,2,18,17,1757207422
+4,32,1,4,COMPUTER,9,184,0.0526,0.0556,1,1,18,17,1757207423
+4,33,1,4,COMPUTER,8,168,0.0000,0.1250,0,3,23,21,1757207424
+4,34,1,4,COMPUTER,8,140,0.0000,0.1875,0,3,15,13,1757207425
+4,35,1,4,COMPUTER,10,200,0.0952,0.1905,2,4,20,19,1757207426
+4,36,1,4,COMPUTER,7,146,0.1333,0.1667,2,2,13,10,1757207427
+4,37,1,4,COMPUTER,8,180,0.0000,0.2174,0,5,20,18,1757207428
+4,38,1,4,COMPUTER,10,210,0.0000,0.1333,0,4,28,26,1757207429
+4,39,1,4,PLAYER 1,9,171,0.0000,0.0455,0,1,21,22,1757207430
+4,40,1,4,PLAYER 1,9,189,0.0455,0.0476,1,1,22,20,1757207431
+5,41,1,5,COMPUTER,10,222,0.0000,0.1429,0,4,26,24,1757207432
+5,42,1,5,COMPUTER,8,174,0.0000,0.1000,0,2,19,20,1757207433
+5,43,1,5,PLAYER 1,9,169,0.0000,0.0000,0,0,20,19,1757207434
+5,44,1,5,COMPUTER,10,160,0.0000,0.0714,0,1,15,14,1757207435
+5,45,1,5,PLAYER 1,12,213,0.0000,0.1250,0,3,23,23,1757207436
+5,46,1,5,COMPUTER,6,136,0.0000,0.2632,0,5,16,14,1757207437
+5,47,1,5,COMPUTER,8,144,0.0000,0.0769,0,1,13,12,1757207438
+5,48,1,5,PLAYER 1,8,147,0.0000,0.0625,0,1,17,15,1757207439
+5,49,1,5,PLAYER 1,9,179,0.0556,0.1000,1,2,18,18,1757207440
+5,50,1,5,PLAYER 1,7,131,0.0667,0.1250,1,2,14,14,1757207441
+6,51,2,1,COMPUTER,7,142,0.0667,0.1176,1,2,15,15,1757207442
+6,52,2,1,COMPUTER,8,154,0.0526,0.0000,1,0,18,19,1757207443
+6,53,2,1,COMPUTER,6,124,0.0000,0.2143,0,3,13,11,1757207444
+6,54,2,1,PLAYER 1,10,197,0.0455,0.0952,1,2,21,19,1757207445
+6,55,2,1,COMPUTER,9,186,0.0526,0.1500,1,3,19,19,1757207446
+6,56,2,1,PLAYER 1,7,143,0.1250,0.1429,2,2,14,13,1757207447
+6,57,2,1,COMPUTER,7,132,0.0000,0.2500,0,4,16,12,1757207448
+6,58,2,1,COMPUTER,8,192,0.0417,0.1667,1,4,24,20,1757207449
+6,59,2,1,COMPUTER,7,124,0.0000,0.0769,0,1,14,12,1757207450
+6,60,2,1,PLAYER 1,6,127,0.0000,0.0625,0,1,16,15,1757207451
+7,61,2,2,COMPUTER,8,162,0.0000,0.1250,0,2,17,14,1757207452
+7,62,2,2,PLAYER 1,8,161,0.0556,0.0526,1,1,19,19,1757207453
+7,63,2,2,COMPUTER,9,192,0.0870,0.1429,2,3,21,18,1757207454
+7,64,2,2,PLAYER 1,9,191,0.0435,0.0476,1,1,22,20,1757207455
+7,65,2,2,COMPUTER,9,186,0.1111,0.1333,2,2,16,13,1757207456
+7,66,2,2,COMPUTER,8,164,0.0000,0.0526,0,1,18,19,1757207457
+7,67,2,2,COMPUTER,10,220,0.0333,0.0323,1,1,30,31,1757207458
+7,68,2,2,COMPUTER,10,188,0.0000,0.0476,0,1,21,20,1757207459
+7,69,2,2,COMPUTER,9,196,0.0500,0.1500,1,3,20,17,1757207460
+7,70,2,2,COMPUTER,8,148,0.2308,0.1818,3,2,11,9,1757207461
+8,71,2,3,COMPUTER,7,142,0.2000,0.1538,3,2,12,11,1757207462
+8,72,2,3,COMPUTER,11,196,0.0000,0.2381,0,5,20,16,1757207463
+8,73,2,3,COMPUTER,8,174,0.0500,0.2381,1,5,19,16,1757207464
+8,74,2,3,PLAYER 1,7,121,0.0833,0.0000,1,0,11,13,1757207465
+8,75,2,3,PLAYER 1,11,189,0.1500,0.1579,3,3,17,16,1757207466
+8,76,2,3,PLAYER 1,10,181,0.0000,0.0526,0,1,19,18,1757207467
+8,77,2,3,COMPUTER,8,180,0.1500,0.1111,3,2,18,16,1757207468
+8,78,2,3,PLAYER 1,7,133,0.0000,0.0000,0,0,13,15,1757207469
+8,79,2,3,COMPUTER,7,154,0.0000,0.1053,0,2,20,18,1757207470
+8,80,2,3,COMPUTER,7,148,0.0000,0.0000,0,0,21,20,1757207471
+9,81,2,4,PLAYER 1,10,167,0.1250,0.2353,2,4,16,13,1757207472
+9,82,2,4,PLAYER 1,10,203,0.0400,0.1111,1,3,24,25,1757207473
+9,83,2,4,COMPUTER,7,152,0.0000,0.0000,0,0,21,20,1757207474
+9,84,2,4,PLAYER 1,8,161,0.0000,0.0588,0,1,17,16,1757207475
+9,85,2,4,COMPUTER,6,126,0.0000,0.0000,0,0,14,14,1757207476
+9,86,2,4,PLAYER 1,12,219,0.1765,0.2500,3,4,14,13,1757207477
+9,87,2,4,PLAYER 1,9,183,0.0909,0.1667,2,3,21,16,1757207478
+9,88,2,4,COMPUTER,8,168,0.0000,0.0476,0,1,21,22,1757207479
+9,89,2,4,PLAYER 1,8,165,0.0000,0.1905,0,4,18,18,1757207480
+9,90,2,4,COMPUTER,12,242,0.0833,0.1667,2,4,23,21,1757207481
+10,91,2,5,COMPUTER,10,198,0.0435,0.2857,1,6,22,15,1757207482
+10,92,2,5,COMPUTER,10,196,0.0476,0.3077,1,8,21,18,1757207483
+10,93,2,5,PLAYER 1,11,187,0.0500,0.1500,1,3,20,18,1757207484
+10,94,2,5,COMPUTER,8,170,0.0714,0.2353,1,4,13,14,1757207485
+10,95,2,5,COMPUTER,6,118,0.0000,0.0714,0,1,14,13,1757207486
+10,96,2,5,COMPUTER,10,210,0.0000,0.1200,0,3,27,22,1757207487
+10,97,2,5,PLAYER 1,9,171,0.0526,0.2000,1,4,18,17,1757207488
+10,98,2,5,COMPUTER,9,176,0.0000,0.1111,0,2,18,18,1757207489
+10,99,2,5,PLAYER 1,9,163,0.1111,0.0714,2,1,16,13,1757207490
+10,100,2,5,COMPUTER,12,210,0.0000,0.1500,0,3,20,18,1757207491
+11,101,3,1,COMPUTER,6,126,0.0000,0.0769,0,1,12,12,1757207492
+11,102,3,1,COMPUTER,8,168,0.0000,0.1000,0,2,21,19,1757207493
+11,103,3,1,COMPUTER,7,128,0.0000,0.1000,0,1,8,9,1757207494
+11,104,3,1,COMPUTER,8,146,0.0000,0.1111,0,2,20,16,1757207495
+11,105,3,1,COMPUTER,6,124,0.0000,0.0000,0,0,18,17,1757207496
+11,106,3,1,PLAYER 1,9,145,0.0000,0.0000,0,0,12,12,1757207497
+11,107,3,1,COMPUTER,6,138,0.0625,0.0000,1,0,15,14,1757207498
+11,108,3,1,PLAYER 1,8,137,0.1667,0.0000,2,0,10,11,1757207499
+11,109,3,1,PLAYER 1,10,179,0.0000,0.0000,0,0,22,25,1757207500
+11,110,3,1,COMPUTER,9,156,0.0000,0.0667,0,1,14,15,1757207501
+12,111,3,2,COMPUTER,11,206,0.0000,0.1579,0,3,18,16,1757207502
+12,112,3,2,COMPUTER,8,188,0.0000,0.0952,0,2,21,20,1757207503
+12,113,3,2,COMPUTER,11,204,0.0000,0.2308,0,6,22,21,1757207504
+12,114,3,2,PLAYER 1,7,159,0.0000,0.0526,0,1,21,19,1757207505
+12,115,3,2,PLAYER 1,9,149,0.0714,0.0714,1,1,14,14,1757207506
+12,116,3,2,COMPUTER,9,206,0.0000,0.0769,0,2,24,24,1757207507
+12,117,3,2,COMPUTER,10,224,0.0000,0.1333,0,4,26,26,1757207508
+12,118,3,2,COMPUTER,9,178,0.2105,0.2353,4,4,15,13,1757207509
+12,119,3,2,PLAYER 1,9,159,0.0000,0.0833,0,1,11,13,1757207510
+12,120,3,2,PLAYER 1,8,137,0.0769,0.1538,1,2,12,11,1757207511
+13,121,3,3,COMPUTER,8,178,0.0556,0.0556,1,1,18,18,1757207512
+13,122,3,3,COMPUTER,9,194,0.0476,0.2083,1,5,21,20,1757207513
+13,123,3,3,COMPUTER,8,162,0.0000,0.1176,0,2,16,15,1757207514
+13,124,3,3,PLAYER 1,9,141,0.3846,0.2727,5,3,9,9,1757207515
+13,125,3,3,PLAYER 1,10,175,0.1176,0.2222,2,4,16,14,1757207516
+13,126,3,3,COMPUTER,8,178,0.0833,0.0500,2,1,22,19,1757207517
+13,127,3,3,PLAYER 1,6,125,0.0000,0.0000,0,0,16,16,1757207518
+13,128,3,3,PLAYER 1,9,157,0.0667,0.0625,1,1,14,16,1757207519
+13,129,3,3,COMPUTER,10,226,0.0714,0.2069,2,6,27,24,1757207520
+13,130,3,3,PLAYER 1,11,175,0.0769,0.1667,1,2,12,10,1757207521
+14,131,3,4,COMPUTER,13,250,0.0370,0.2414,1,7,26,23,1757207522
+14,132,3,4,COMPUTER,12,234,0.1429,0.2273,3,5,18,17,1757207523
+14,133,3,4,COMPUTER,13,258,0.1250,0.0870,3,2,21,21,1757207524
+14,134,3,4,PLAYER 1,7,145,0.0667,0.0714,1,1,14,15,1757207525
+14,135,3,4,COMPUTER,9,200,0.0952,0.2727,2,6,19,17,1757207526
+14,136,3,4,COMPUTER,10,200,0.0500,0.0500,1,1,19,19,1757207527
+14,137,3,4,PLAYER 1,12,193,0.0000,0.2222,0,4,15,14,1757207528
+14,138,3,4,PLAYER 1,6,121,0.0000,0.1429,0,2,14,13,1757207529
+14,139,3,4,COMPUTER,8,122,0.0000,0.1000,0,1,9,11,1757207530
+14,140,3,4,PLAYER 1,7,145,0.1429,0.2727,2,3,12,9,1757207531
+15,141,3,5,COMPUTER,8,152,0.0000,0.1579,0,3,20,18,1757207532
+15,142,3,5,COMPUTER,12,228,0.0500,0.2727,1,6,19,18,1757207533
+15,143,3,5,PLAYER 1,8,167,0.0625,0.2000,1,3,15,12,1757207534
+15,144,3,5,PLAYER 1,8,147,0.0000,0.0667,0,1,15,14,1757207535
+15,145,3,5,PLAYER 1,7,147,0.0526,0.0000,1,0,19,17,1757207536
+15,146,3,5,COMPUTER,9,154,0.0000,0.0833,0,1,13,11,1757207537
+15,147,3,5,COMPUTER,11,224,0.0000,0.0714,0,2,29,27,1757207538
+15,148,3,5,PLAYER 1,10,201,0.0435,0.0476,1,1,22,20,1757207539
+15,149,3,5,COMPUTER,10,206,0.0000,0.1667,0,4,22,20,1757207540
+15,150,3,5,COMPUTER,7,136,0.0714,0.2143,1,3,13,12,1757207541
+16,151,4,1,COMPUTER,6,122,0.0714,0.1333,1,2,13,14,1757207542
+16,152,4,1,COMPUTER,10,194,0.0000,0.0952,0,2,20,19,1757207543
+16,153,4,1,COMPUTER,8,156,0.0526,0.0000,1,0,18,19,1757207544
+16,154,4,1,COMPUTER,8,144,0.0714,0.1538,1,2,13,12,1757207545
+16,155,4,1,COMPUTER,8,166,0.2105,0.0000,4,0,16,18,1757207546
+16,156,4,1,COMPUTER,6,140,0.0000,0.2105,0,4,18,15,1757207547
+16,157,4,1,COMPUTER,7,144,0.0000,0.0588,0,1,19,16,1757207548
+16,158,4,1,COMPUTER,7,150,0.0000,0.1053,0,2,20,18,1757207549
+16,159,4,1,PLAYER 1,10,173,0.0526,0.0556,1,1,19,17,1757207550
+16,160,4,1,COMPUTER,7,150,0.0000,0.1111,0,2,18,17,1757207551
+17,161,4,2,PLAYER 1,10,169,0.0556,0.0556,1,1,17,17,1757207552
+17,162,4,2,COMPUTER,9,170,0.0000,0.0588,0,1,17,16,1757207553
+17,163,4,2,COMPUTER,11,218,0.1579,0.2000,3,4,16,17,1757207554
+17,164,4,2,COMPUTER,11,204,0.0000,0.1304,0,3,22,20,1757207555
+17,165,4,2,PLAYER 1,9,189,0.1429,0.0952,3,2,19,19,1757207556
+17,166,4,2,COMPUTER,9,158,0.0000,0.0714,0,1,14,13,1757207557
+17,167,4,2,COMPUTER,9,164,0.0000,0.0526,0,1,19,18,1757207558
+17,168,4,2,COMPUTER,9,200,0.0690,0.0400,2,1,27,25,1757207559
+17,169,4,2,PLAYER 1,10,163,0.0000,0.3571,0,5,13,9,1757207560
+17,170,4,2,PLAYER 1,7,167,0.0000,0.0435,0,1,24,24,1757207561
+18,171,4,3,COMPUTER,8,164,0.0000,0.1111,0,2,19,17,1757207562
+18,172,4,3,PLAYER 1,9,189,0.0000,0.1905,0,4,19,17,1757207563
+18,173,4,3,COMPUTER,9,168,0.0588,0.0556,1,1,16,18,1757207564
+18,174,4,3,COMPUTER,7,170,0.0000,0.1739,0,4,20,20,1757207565
+18,175,4,3,COMPUTER,8,130,0.0000,0.4167,0,5,12,7,1757207566
+18,176,4,3,COMPUTER,9,162,0.0000,0.1579,0,3,16,18,1757207567
+18,177,4,3,COMPUTER,8,180,0.0000,0.1429,0,3,20,18,1757207568
+18,178,4,3,COMPUTER,9,184,0.0435,0.0909,1,2,23,20,1757207569
+18,179,4,3,COMPUTER,11,210,0.0000,0.0833,0,2,26,22,1757207570
+18,180,4,3,PLAYER 1,9,175,0.0714,0.1765,1,3,13,14,1757207571
+19,181,4,4,COMPUTER,7,138,0.0000,0.1538,0,2,14,12,1757207572
+19,182,4,4,COMPUTER,9,184,0.0000,0.1000,0,2,19,18,1757207573
+19,183,4,4,COMPUTER,9,208,0.0400,0.0741,1,2,24,26,1757207574
+19,184,4,4,COMPUTER,10,202,0.0500,0.2609,1,6,19,18,1757207575
+19,185,4,4,COMPUTER,10,188,0.0000,0.1200,0,3,23,22,1757207576
+19,186,4,4,COMPUTER,8,160,0.0000,0.1500,0,3,19,17,1757207577
+19,187,4,4,COMPUTER,10,218,0.1538,0.0870,4,2,24,21,1757207578
+19,188,4,4,COMPUTER,8,188,0.0417,0.0800,1,2,25,23,1757207579
+19,189,4,4,PLAYER 1,10,171,0.0769,0.1429,1,2,12,12,1757207580
+19,190,4,4,COMPUTER,12,214,0.0455,0.0455,1,1,21,22,1757207581
+20,191,4,5,COMPUTER,8,186,0.0000,0.1250,0,3,24,22,1757207582
+20,192,4,5,COMPUTER,7,144,0.0625,0.1333,1,2,16,14,1757207583
+20,193,4,5,COMPUTER,10,220,0.0000,0.1333,0,4,28,27,1757207584
+20,194,4,5,COMPUTER,10,212,0.0800,0.0769,2,2,24,26,1757207585
+20,195,4,5,COMPUTER,8,146,0.0000,0.1429,0,2,14,13,1757207586
+20,196,4,5,COMPUTER,8,156,0.0556,0.0556,1,1,17,17,1757207587
+20,197,4,5,COMPUTER,8,174,0.0625,0.2941,1,5,16,12,1757207588
+20,198,4,5,COMPUTER,8,182,0.0000,0.2500,0,5,19,17,1757207589
+20,199,4,5,PLAYER 1,11,237,0.0000,0.0370,0,1,28,27,1757207590
+20,200,4,5,COMPUTER,9,184,0.0000,0.2105,0,4,18,16,1757207591
+21,201,5,1,COMPUTER,9,172,0.0556,0.2500,1,5,17,15,1757207592
+21,202,5,1,COMPUTER,8,156,0.0000,0.0588,0,1,17,16,1757207593
+21,203,5,1,PLAYER 1,5,119,0.0000,0.0000,0,0,16,16,1757207594
+21,204,5,1,COMPUTER,9,164,0.0000,0.0588,0,1,18,16,1757207595
+21,205,5,1,PLAYER 1,7,137,0.0000,0.0625,0,1,17,15,1757207596
+21,206,5,1,COMPUTER,7,154,0.0455,0.0909,1,2,21,21,1757207597
+21,207,5,1,COMPUTER,9,170,0.1053,0.0556,2,1,17,19,1757207598
+21,208,5,1,PLAYER 1,8,177,0.1364,0.1429,3,3,19,18,1757207599
+21,209,5,1,COMPUTER,10,160,0.0000,0.1333,0,2,16,14,1757207600
+21,210,5,1,PLAYER 1,7,141,0.0000,0.0769,0,1,12,12,1757207601
+22,211,5,2,COMPUTER,11,216,0.0455,0.1364,1,3,21,20,1757207602
+22,212,5,2,COMPUTER,9,184,0.0000,0.1739,0,4,21,19,1757207603
+22,213,5,2,PLAYER 1,9,185,0.0455,0.0000,1,0,22,23,1757207604
+22,214,5,2,PLAYER 1,12,223,0.0000,0.0833,0,2,22,22,1757207605
+22,215,5,2,COMPUTER,7,138,0.0588,0.1176,1,2,16,15,1757207606
+22,216,5,2,COMPUTER,6,96,0.0000,0.2500,0,1,4,4,1757207607
+22,217,5,2,COMPUTER,8,158,0.0000,0.1053,0,2,17,18,1757207608
+22,218,5,2,COMPUTER,10,216,0.0476,0.0909,1,2,21,21,1757207609
+22,219,5,2,COMPUTER,8,156,0.0714,0.0000,1,0,13,16,1757207610
+22,220,5,2,PLAYER 1,8,169,0.0000,0.0000,0,0,19,19,1757207611
+23,221,5,3,COMPUTER,8,152,0.1176,0.2353,2,4,17,13,1757207612
+23,222,5,3,COMPUTER,6,124,0.0000,0.0667,0,1,16,14,1757207613
+23,223,5,3,PLAYER 1,8,137,0.2000,0.2308,3,3,12,11,1757207614
+23,224,5,3,COMPUTER,13,224,0.0500,0.2000,1,4,19,17,1757207615
+23,225,5,3,PLAYER 1,7,147,0.0000,0.1500,0,3,18,19,1757207616
+23,226,5,3,PLAYER 1,9,181,0.0556,0.1111,1,2,18,16,1757207617
+23,227,5,3,PLAYER 1,10,203,0.0000,0.0370,0,1,27,26,1757207618
+23,228,5,3,COMPUTER,11,228,0.0385,0.1538,1,4,25,23,1757207619
+23,229,5,3,PLAYER 1,8,149,0.0714,0.0667,1,1,14,14,1757207620
+23,230,5,3,COMPUTER,9,182,0.2381,0.0000,5,0,17,17,1757207621
+24,231,5,4,COMPUTER,9,174,0.0500,0.1111,1,2,19,16,1757207622
+24,232,5,4,COMPUTER,9,172,0.0000,0.2000,0,4,21,17,1757207623
+24,233,5,4,COMPUTER,9,154,0.0000,0.0714,0,1,14,13,1757207624
+24,234,5,4,PLAYER 1,8,159,0.0714,0.2500,1,3,13,10,1757207625
+24,235,5,4,COMPUTER,8,168,0.0000,0.0500,0,1,18,21,1757207626
+24,236,5,4,PLAYER 1,9,191,0.1000,0.1304,2,3,18,20,1757207627
+24,237,5,4,COMPUTER,11,208,0.0000,0.1154,0,3,26,24,1757207628
+24,238,5,4,COMPUTER,8,162,0.0556,0.2222,1,4,17,14,1757207629
+24,239,5,4,PLAYER 1,8,155,0.0000,0.0625,0,1,15,16,1757207630
+24,240,5,4,PLAYER 1,9,141,0.0000,0.1111,0,1,9,8,1757207631
+25,241,5,5,PLAYER 1,9,185,0.0500,0.1739,1,4,19,19,1757207632
+25,242,5,5,COMPUTER,6,118,0.0833,0.2000,1,3,12,12,1757207633
+25,243,5,5,COMPUTER,10,158,0.0000,0.2000,0,2,11,8,1757207634
+25,244,5,5,PLAYER 1,10,155,0.0714,0.0667,1,1,13,15,1757207635
+25,245,5,5,PLAYER 1,7,113,0.0000,0.2727,0,3,12,8,1757207636
+25,246,5,5,PLAYER 1,11,177,0.0714,0.1333,1,2,13,13,1757207637
+25,247,5,5,COMPUTER,9,180,0.0526,0.1000,1,2,20,19,1757207638
+25,248,5,5,COMPUTER,8,184,0.0476,0.0952,1,2,20,19,1757207639
+25,249,5,5,PLAYER 1,9,191,0.0400,0.0435,1,1,25,23,1757207640
+25,250,5,5,PLAYER 1,10,203,0.0000,0.0435,0,1,22,22,1757207641
+
+== Healthchecks ==
+Hit rates within [0.05,0.95]? false (P1=0.039 P2=0.117)
+
+--- SUMMARY_JSON_START ---
+{ "global":{ "avgRounds":8.672,"avgTurns":170.312,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":27,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":1,"secondHitKills":6,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.4947368421053,"covers":67,"escapes":2,"preventedSendHome":0 },"Extra Move":{ "distanceGain":1,"laneOpens":3,"twoStepFinishes":1 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":79,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":3,"secondHitKills":3,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.5,"covers":78,"escapes":5,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":4 } } },"difficulty":{ "P1":-1,"P2":-1 },"global":{ "actions":[{ "ATTACK":4831,"DEFEND":997,"MOVE":15506 },{ "ATTACK":4831,"DEFEND":991,"MOVE":15422 }],"buffs":{ "assigned":{ "P1":739,"P2":697 },"drawn":{ "P1":764,"P2":710 } },"hitRates":{ "P1":0.039421813403417,"P2":0.11713062098501 },"kd":{ "P1":0.3290676416819,"P2":3.0388888888889 },"luck":{ "avgFirstFlagPickTurn":{ "P1":80.658536585366,"P2":81.312 },"tokenPickupsMove":{ "P1":331,"P2":312 },"tokenRespawnHits":{ "P1":33,"P2":40 } },"progress":{ "P1":6504,"P2":6306 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":1018,"flat":18692,"up":1262 },{ "down":1435,"flat":18360,"up":1259 }],"wastedAttackRate":{ "P1":0.9886114761279,"P2":0.91199143468951 } },"initiative":{ "P1":250,"P2":0 },"matches":250,"wins":{ "P1":90,"P2":160,"TIMEOUT":0 } },"per_pair":[{ "P1":1,"P2":1,"summary":{ "avgRounds":7.7,"avgTurns":153.3,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":2.6666666666667,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":4,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":1,"P2":1 },"global":{ "actions":[{ "ATTACK":181,"DEFEND":32,"MOVE":555 },{ "ATTACK":181,"DEFEND":31,"MOVE":553 }],"buffs":{ "assigned":{ "P1":31,"P2":26 },"drawn":{ "P1":31,"P2":27 } },"hitRates":{ "P1":0.011494252873563,"P2":0.06145251396648 },"kd":{ "P1":0.18181818181818,"P2":5.5 },"luck":{ "avgFirstFlagPickTurn":{ "P1":75.8,"P2":73.8 },"tokenPickupsMove":{ "P1":16,"P2":9 },"tokenRespawnHits":{ "P1":0,"P2":1 } },"progress":{ "P1":259,"P2":239 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":28,"flat":685,"up":46 },{ "down":42,"flat":688,"up":32 }],"wastedAttackRate":{ "P1":1.0402298850575,"P2":0.99441340782123 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":3,"P2":7,"TIMEOUT":0 } } },{ "P1":1,"P2":2,"summary":{ "avgRounds":8.3,"avgTurns":163.6,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5,"covers":3,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.2,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":1,"P2":2 },"global":{ "actions":[{ "ATTACK":189,"DEFEND":34,"MOVE":598 },{ "ATTACK":189,"DEFEND":34,"MOVE":592 }],"buffs":{ "assigned":{ "P1":26,"P2":22 },"drawn":{ "P1":29,"P2":25 } },"hitRates":{ "P1":0.016304347826087,"P2":0.086021505376344 },"kd":{ "P1":0.1875,"P2":5.3333333333333 },"luck":{ "avgFirstFlagPickTurn":{ "P1":67.4,"P2":83 },"tokenPickupsMove":{ "P1":18,"P2":14 },"tokenRespawnHits":{ "P1":2,"P2":1 } },"progress":{ "P1":267,"P2":236 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":41,"flat":729,"up":43 },{ "down":56,"flat":697,"up":59 }],"wastedAttackRate":{ "P1":1.0054347826087,"P2":0.94086021505376 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":6,"P2":4,"TIMEOUT":0 } } },{ "P1":1,"P2":3,"summary":{ "avgRounds":9,"avgTurns":168.9,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6.8,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.5,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":1,"P2":3 },"global":{ "actions":[{ "ATTACK":195,"DEFEND":40,"MOVE":612 },{ "ATTACK":195,"DEFEND":40,"MOVE":607 }],"buffs":{ "assigned":{ "P1":31,"P2":30 },"drawn":{ "P1":31,"P2":31 } },"hitRates":{ "P1":0.038461538461538,"P2":0.11578947368421 },"kd":{ "P1":0.31818181818182,"P2":3.1428571428571 },"luck":{ "avgFirstFlagPickTurn":{ "P1":68.2,"P2":83.4 },"tokenPickupsMove":{ "P1":10,"P2":13 },"tokenRespawnHits":{ "P1":1,"P2":3 } },"progress":{ "P1":287,"P2":249 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":48,"flat":750,"up":34 },{ "down":46,"flat":726,"up":64 }],"wastedAttackRate":{ "P1":0.98351648351648,"P2":0.91578947368421 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":5,"P2":5,"TIMEOUT":0 } } },{ "P1":1,"P2":4,"summary":{ "avgRounds":8.7,"avgTurns":176.4,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":0,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":3.3333333333333,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":3,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":1,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":2.6666666666667,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":1 } } },"difficulty":{ "P1":1,"P2":4 },"global":{ "actions":[{ "ATTACK":217,"DEFEND":48,"MOVE":618 },{ "ATTACK":217,"DEFEND":48,"MOVE":616 }],"buffs":{ "assigned":{ "P1":30,"P2":30 },"drawn":{ "P1":30,"P2":30 } },"hitRates":{ "P1":0.03,"P2":0.12621359223301 },"kd":{ "P1":0.23076923076923,"P2":4.3333333333333 },"luck":{ "avgFirstFlagPickTurn":{ "P1":86.2,"P2":81 },"tokenPickupsMove":{ "P1":13,"P2":14 },"tokenRespawnHits":{ "P1":0,"P2":2 } },"progress":{ "P1":271,"P2":254 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":54,"flat":780,"up":27 },{ "down":51,"flat":741,"up":73 }],"wastedAttackRate":{ "P1":0.99,"P2":0.88834951456311 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":2,"P2":8,"TIMEOUT":0 } } },{ "P1":1,"P2":5,"summary":{ "avgRounds":8.7,"avgTurns":167.5,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":3.6,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":1,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":7,"covers":6,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":1,"P2":5 },"global":{ "actions":[{ "ATTACK":188,"DEFEND":37,"MOVE":615 },{ "ATTACK":188,"DEFEND":37,"MOVE":610 }],"buffs":{ "assigned":{ "P1":32,"P2":36 },"drawn":{ "P1":35,"P2":37 } },"hitRates":{ "P1":0.011363636363636,"P2":0.11111111111111 },"kd":{ "P1":0.095238095238095,"P2":10.5 },"luck":{ "avgFirstFlagPickTurn":{ "P1":68.333333333333,"P2":78.2 },"tokenPickupsMove":{ "P1":16,"P2":17 },"tokenRespawnHits":{ "P1":0,"P2":3 } },"progress":{ "P1":276,"P2":226 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":34,"flat":757,"up":31 },{ "down":46,"flat":736,"up":53 }],"wastedAttackRate":{ "P1":1.0284090909091,"P2":0.91534391534392 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":5,"P2":5,"TIMEOUT":0 } } },{ "P1":2,"P2":1,"summary":{ "avgRounds":7.5,"avgTurns":152.1,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":3,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":3,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.4285714285714,"covers":7,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":2,"P2":1 },"global":{ "actions":[{ "ATTACK":181,"DEFEND":33,"MOVE":548 },{ "ATTACK":181,"DEFEND":33,"MOVE":545 }],"buffs":{ "assigned":{ "P1":26,"P2":27 },"drawn":{ "P1":27,"P2":27 } },"hitRates":{ "P1":0.04093567251462,"P2":0.1264367816092 },"kd":{ "P1":0.31818181818182,"P2":3.1428571428571 },"luck":{ "avgFirstFlagPickTurn":{ "P1":79.2,"P2":65.2 },"tokenPickupsMove":{ "P1":12,"P2":12 },"tokenRespawnHits":{ "P1":1,"P2":0 } },"progress":{ "P1":236,"P2":262 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":28,"flat":660,"up":60 },{ "down":51,"flat":673,"up":26 }],"wastedAttackRate":{ "P1":0.99415204678363,"P2":0.89080459770115 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":3,"P2":7,"TIMEOUT":0 } } },{ "P1":2,"P2":2,"summary":{ "avgRounds":8.8,"avgTurns":180.8,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4,"covers":0,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4,"covers":3,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":2,"P2":2 },"global":{ "actions":[{ "ATTACK":206,"DEFEND":49,"MOVE":650 },{ "ATTACK":206,"DEFEND":49,"MOVE":648 }],"buffs":{ "assigned":{ "P1":28,"P2":24 },"drawn":{ "P1":29,"P2":24 } },"hitRates":{ "P1":0.055276381909548,"P2":0.087628865979381 },"kd":{ "P1":0.64705882352941,"P2":1.5454545454545 },"luck":{ "avgFirstFlagPickTurn":{ "P1":77.4,"P2":80.6 },"tokenPickupsMove":{ "P1":11,"P2":12 },"tokenRespawnHits":{ "P1":2,"P2":2 } },"progress":{ "P1":256,"P2":278 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":48,"flat":791,"up":56 },{ "down":58,"flat":774,"up":57 }],"wastedAttackRate":{ "P1":0.97989949748744,"P2":0.92783505154639 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":2,"P2":8,"TIMEOUT":0 } } },{ "P1":2,"P2":3,"summary":{ "avgRounds":8.3,"avgTurns":161.8,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.4285714285714,"covers":3,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":2,"P2":3 },"global":{ "actions":[{ "ATTACK":184,"DEFEND":40,"MOVE":587 },{ "ATTACK":184,"DEFEND":40,"MOVE":583 }],"buffs":{ "assigned":{ "P1":30,"P2":30 },"drawn":{ "P1":30,"P2":31 } },"hitRates":{ "P1":0.062857142857143,"P2":0.11494252873563 },"kd":{ "P1":0.55,"P2":1.8181818181818 },"luck":{ "avgFirstFlagPickTurn":{ "P1":72.6,"P2":85.4 },"tokenPickupsMove":{ "P1":10,"P2":11 },"tokenRespawnHits":{ "P1":0,"P2":2 } },"progress":{ "P1":257,"P2":242 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":45,"flat":694,"up":59 },{ "down":54,"flat":701,"up":41 }],"wastedAttackRate":{ "P1":0.97142857142857,"P2":0.91379310344828 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":4,"P2":6,"TIMEOUT":0 } } },{ "P1":2,"P2":4,"summary":{ "avgRounds":9,"avgTurns":178.6,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6.4,"covers":5,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":3,"escapes":1,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":2,"P2":4 },"global":{ "actions":[{ "ATTACK":204,"DEFEND":42,"MOVE":650 },{ "ATTACK":204,"DEFEND":41,"MOVE":645 }],"buffs":{ "assigned":{ "P1":32,"P2":25 },"drawn":{ "P1":32,"P2":26 } },"hitRates":{ "P1":0.052083333333333,"P2":0.12307692307692 },"kd":{ "P1":0.41666666666667,"P2":2.4 },"luck":{ "avgFirstFlagPickTurn":{ "P1":71.6,"P2":83.4 },"tokenPickupsMove":{ "P1":12,"P2":6 },"tokenRespawnHits":{ "P1":1,"P2":0 } },"progress":{ "P1":280,"P2":257 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":45,"flat":782,"up":53 },{ "down":59,"flat":772,"up":50 }],"wastedAttackRate":{ "P1":0.984375,"P2":0.91282051282051 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":6,"P2":4,"TIMEOUT":0 } } },{ "P1":2,"P2":5,"summary":{ "avgRounds":9.4,"avgTurns":179.9,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":12,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":3,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":0,"covers":0,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":2,"P2":5 },"global":{ "actions":[{ "ATTACK":205,"DEFEND":37,"MOVE":659 },{ "ATTACK":205,"DEFEND":36,"MOVE":657 }],"buffs":{ "assigned":{ "P1":25,"P2":23 },"drawn":{ "P1":25,"P2":23 } },"hitRates":{ "P1":0.036458333333333,"P2":0.17948717948718 },"kd":{ "P1":0.2,"P2":5 },"luck":{ "avgFirstFlagPickTurn":{ "P1":87.666666666667,"P2":88.8 },"tokenPickupsMove":{ "P1":15,"P2":11 },"tokenRespawnHits":{ "P1":0,"P2":1 } },"progress":{ "P1":275,"P2":265 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":45,"flat":779,"up":57 },{ "down":77,"flat":742,"up":67 }],"wastedAttackRate":{ "P1":0.984375,"P2":0.85128205128205 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":3,"P2":7,"TIMEOUT":0 } } },{ "P1":3,"P2":1,"summary":{ "avgRounds":7.7,"avgTurns":144.7,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":3,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":6,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":7.6,"covers":5,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":3,"P2":1 },"global":{ "actions":[{ "ATTACK":155,"DEFEND":35,"MOVE":535 },{ "ATTACK":155,"DEFEND":34,"MOVE":533 }],"buffs":{ "assigned":{ "P1":29,"P2":23 },"drawn":{ "P1":29,"P2":23 } },"hitRates":{ "P1":0.019867549668874,"P2":0.046052631578947 },"kd":{ "P1":0.42857142857143,"P2":2.3333333333333 },"luck":{ "avgFirstFlagPickTurn":{ "P1":73.6,"P2":64 },"tokenPickupsMove":{ "P1":14,"P2":8 },"tokenRespawnHits":{ "P1":3,"P2":1 } },"progress":{ "P1":208,"P2":245 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":33,"flat":638,"up":50 },{ "down":44,"flat":650,"up":25 }],"wastedAttackRate":{ "P1":1.0066225165563,"P2":0.98684210526316 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":3,"P2":7,"TIMEOUT":0 } } },{ "P1":3,"P2":2,"summary":{ "avgRounds":9.1,"avgTurns":181,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":7.5,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":7,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":3,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":3,"P2":2 },"global":{ "actions":[{ "ATTACK":201,"DEFEND":39,"MOVE":667 },{ "ATTACK":201,"DEFEND":39,"MOVE":663 }],"buffs":{ "assigned":{ "P1":38,"P2":30 },"drawn":{ "P1":41,"P2":31 } },"hitRates":{ "P1":0.032432432432432,"P2":0.13197969543147 },"kd":{ "P1":0.23076923076923,"P2":4.3333333333333 },"luck":{ "avgFirstFlagPickTurn":{ "P1":86,"P2":88.6 },"tokenPickupsMove":{ "P1":19,"P2":16 },"tokenRespawnHits":{ "P1":4,"P2":1 } },"progress":{ "P1":280,"P2":255 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":51,"flat":780,"up":52 },{ "down":71,"flat":756,"up":72 }],"wastedAttackRate":{ "P1":0.99459459459459,"P2":0.89847715736041 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":4,"P2":6,"TIMEOUT":0 } } },{ "P1":3,"P2":3,"summary":{ "avgRounds":8.8,"avgTurns":171.1,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6.6666666666667,"covers":5,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":8,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":1,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":10,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":3,"P2":3 },"global":{ "actions":[{ "ATTACK":195,"DEFEND":45,"MOVE":618 },{ "ATTACK":195,"DEFEND":45,"MOVE":613 }],"buffs":{ "assigned":{ "P1":27,"P2":27 },"drawn":{ "P1":29,"P2":27 } },"hitRates":{ "P1":0.082872928176796,"P2":0.13812154696133 },"kd":{ "P1":0.6,"P2":1.6666666666667 },"luck":{ "avgFirstFlagPickTurn":{ "P1":88,"P2":83.2 },"tokenPickupsMove":{ "P1":12,"P2":13 },"tokenRespawnHits":{ "P1":3,"P2":2 } },"progress":{ "P1":268,"P2":265 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":58,"flat":727,"up":56 },{ "down":64,"flat":707,"up":63 }],"wastedAttackRate":{ "P1":0.94475138121547,"P2":0.88950276243094 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":5,"P2":5,"TIMEOUT":0 } } },{ "P1":3,"P2":4,"summary":{ "avgRounds":9.7,"avgTurns":186.8,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":0,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6.5714285714286,"covers":4,"escapes":1,"preventedSendHome":0 },"Extra Move":{ "distanceGain":1,"laneOpens":1,"twoStepFinishes":1 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":3,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":3,"P2":4 },"global":{ "actions":[{ "ATTACK":194,"DEFEND":43,"MOVE":699 },{ "ATTACK":194,"DEFEND":43,"MOVE":695 }],"buffs":{ "assigned":{ "P1":34,"P2":35 },"drawn":{ "P1":34,"P2":35 } },"hitRates":{ "P1":0.072222222222222,"P2":0.17486338797814 },"kd":{ "P1":0.40625,"P2":2.4615384615385 },"luck":{ "avgFirstFlagPickTurn":{ "P1":90.2,"P2":92.4 },"tokenPickupsMove":{ "P1":14,"P2":15 },"tokenRespawnHits":{ "P1":2,"P2":3 } },"progress":{ "P1":280,"P2":258 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":43,"flat":811,"up":64 },{ "down":72,"flat":790,"up":57 }],"wastedAttackRate":{ "P1":0.92777777777778,"P2":0.86885245901639 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":4,"P2":6,"TIMEOUT":0 } } },{ "P1":3,"P2":5,"summary":{ "avgRounds":9,"avgTurns":176.2,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.2,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4.6666666666667,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":3,"P2":5 },"global":{ "actions":[{ "ATTACK":195,"DEFEND":43,"MOVE":645 },{ "ATTACK":195,"DEFEND":42,"MOVE":642 }],"buffs":{ "assigned":{ "P1":32,"P2":26 },"drawn":{ "P1":33,"P2":26 } },"hitRates":{ "P1":0.026737967914439,"P2":0.1283422459893 },"kd":{ "P1":0.20833333333333,"P2":4.8 },"luck":{ "avgFirstFlagPickTurn":{ "P1":90.777777777778,"P2":84 },"tokenPickupsMove":{ "P1":15,"P2":10 },"tokenRespawnHits":{ "P1":1,"P2":0 } },"progress":{ "P1":281,"P2":248 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":42,"flat":781,"up":47 },{ "down":54,"flat":763,"up":52 }],"wastedAttackRate":{ "P1":1,"P2":0.90374331550802 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":4,"P2":6,"TIMEOUT":0 } } },{ "P1":4,"P2":1,"summary":{ "avgRounds":7.7,"avgTurns":153.9,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":0,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":3,"escapes":1,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":3,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4.4,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":4,"P2":1 },"global":{ "actions":[{ "ATTACK":181,"DEFEND":47,"MOVE":542 },{ "ATTACK":181,"DEFEND":47,"MOVE":541 }],"buffs":{ "assigned":{ "P1":29,"P2":26 },"drawn":{ "P1":32,"P2":27 } },"hitRates":{ "P1":0.045714285714286,"P2":0.090395480225989 },"kd":{ "P1":0.5,"P2":2 },"luck":{ "avgFirstFlagPickTurn":{ "P1":83.444444444444,"P2":70.4 },"tokenPickupsMove":{ "P1":18,"P2":14 },"tokenRespawnHits":{ "P1":2,"P2":3 } },"progress":{ "P1":213,"P2":265 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":24,"flat":685,"up":51 },{ "down":44,"flat":700,"up":21 }],"wastedAttackRate":{ "P1":0.99428571428571,"P2":0.93220338983051 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":1,"P2":9,"TIMEOUT":0 } } },{ "P1":4,"P2":2,"summary":{ "avgRounds":9.4,"avgTurns":180.2,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6.8,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":7.6,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":2 } } },"difficulty":{ "P1":4,"P2":2 },"global":{ "actions":[{ "ATTACK":201,"DEFEND":41,"MOVE":661 },{ "ATTACK":201,"DEFEND":41,"MOVE":657 }],"buffs":{ "assigned":{ "P1":31,"P2":33 },"drawn":{ "P1":31,"P2":33 } },"hitRates":{ "P1":0.04639175257732,"P2":0.10309278350515 },"kd":{ "P1":0.45,"P2":2.2222222222222 },"luck":{ "avgFirstFlagPickTurn":{ "P1":84,"P2":84.4 },"tokenPickupsMove":{ "P1":13,"P2":16 },"tokenRespawnHits":{ "P1":1,"P2":1 } },"progress":{ "P1":252,"P2":245 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":42,"flat":805,"up":45 },{ "down":59,"flat":773,"up":59 }],"wastedAttackRate":{ "P1":0.96907216494845,"P2":0.91752577319588 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":4,"P2":6,"TIMEOUT":0 } } },{ "P1":4,"P2":3,"summary":{ "avgRounds":8.7,"avgTurns":173.2,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5,"covers":3,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":4,"P2":3 },"global":{ "actions":[{ "ATTACK":197,"DEFEND":43,"MOVE":627 },{ "ATTACK":197,"DEFEND":43,"MOVE":625 }],"buffs":{ "assigned":{ "P1":35,"P2":22 },"drawn":{ "P1":35,"P2":22 } },"hitRates":{ "P1":0.016393442622951,"P2":0.14871794871795 },"kd":{ "P1":0.10344827586207,"P2":9.6666666666667 },"luck":{ "avgFirstFlagPickTurn":{ "P1":97.4,"P2":79.6 },"tokenPickupsMove":{ "P1":17,"P2":9 },"tokenRespawnHits":{ "P1":1,"P2":0 } },"progress":{ "P1":248,"P2":249 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":24,"flat":764,"up":60 },{ "down":78,"flat":742,"up":43 }],"wastedAttackRate":{ "P1":1.0054644808743,"P2":0.87692307692308 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":2,"P2":8,"TIMEOUT":0 } } },{ "P1":4,"P2":4,"summary":{ "avgRounds":9.3,"avgTurns":187.1,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":0,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.3333333333333,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":1,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":5,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4.3333333333333,"covers":3,"escapes":1,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":4,"P2":4 },"global":{ "actions":[{ "ATTACK":216,"DEFEND":40,"MOVE":680 },{ "ATTACK":216,"DEFEND":40,"MOVE":679 }],"buffs":{ "assigned":{ "P1":28,"P2":33 },"drawn":{ "P1":29,"P2":34 } },"hitRates":{ "P1":0.044117647058824,"P2":0.11792452830189 },"kd":{ "P1":0.36,"P2":2.7777777777778 },"luck":{ "avgFirstFlagPickTurn":{ "P1":96.4,"P2":92 },"tokenPickupsMove":{ "P1":9,"P2":15 },"tokenRespawnHits":{ "P1":2,"P2":4 } },"progress":{ "P1":255,"P2":264 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":40,"flat":822,"up":59 },{ "down":64,"flat":817,"up":50 }],"wastedAttackRate":{ "P1":0.98039215686275,"P2":0.90094339622642 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":1,"P2":9,"TIMEOUT":0 } } },{ "P1":4,"P2":5,"summary":{ "avgRounds":8.7,"avgTurns":184.1,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":0,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":3,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4.7272727272727,"covers":9,"escapes":1,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":4,"P2":5 },"global":{ "actions":[{ "ATTACK":215,"DEFEND":46,"MOVE":660 },{ "ATTACK":215,"DEFEND":45,"MOVE":660 }],"buffs":{ "assigned":{ "P1":29,"P2":38 },"drawn":{ "P1":30,"P2":39 } },"hitRates":{ "P1":0.025,"P2":0.13809523809524 },"kd":{ "P1":0.17241379310345,"P2":5.8 },"luck":{ "avgFirstFlagPickTurn":{ "P1":80.6,"P2":84.8 },"tokenPickupsMove":{ "P1":7,"P2":21 },"tokenRespawnHits":{ "P1":3,"P2":1 } },"progress":{ "P1":277,"P2":267 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":52,"flat":799,"up":49 },{ "down":58,"flat":791,"up":65 }],"wastedAttackRate":{ "P1":1.02,"P2":0.90952380952381 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":1,"P2":9,"TIMEOUT":0 } } },{ "P1":5,"P2":1,"summary":{ "avgRounds":7.9,"avgTurns":155,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":0,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":1,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":4,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":5.3333333333333,"covers":2,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":5,"P2":1 },"global":{ "actions":[{ "ATTACK":179,"DEFEND":32,"MOVE":566 },{ "ATTACK":179,"DEFEND":32,"MOVE":562 }],"buffs":{ "assigned":{ "P1":23,"P2":29 },"drawn":{ "P1":24,"P2":30 } },"hitRates":{ "P1":0.040229885057471,"P2":0.097142857142857 },"kd":{ "P1":0.41176470588235,"P2":2.4285714285714 },"luck":{ "avgFirstFlagPickTurn":{ "P1":74.4,"P2":70 },"tokenPickupsMove":{ "P1":8,"P2":20 },"tokenRespawnHits":{ "P1":1,"P2":0 } },"progress":{ "P1":240,"P2":265 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":29,"flat":692,"up":49 },{ "down":50,"flat":688,"up":30 }],"wastedAttackRate":{ "P1":0.97701149425287,"P2":0.92571428571429 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":4,"P2":6,"TIMEOUT":0 } } },{ "P1":5,"P2":2,"summary":{ "avgRounds":8.8,"avgTurns":174.1,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4.2857142857143,"covers":5,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":5,"P2":2 },"global":{ "actions":[{ "ATTACK":189,"DEFEND":43,"MOVE":640 },{ "ATTACK":189,"DEFEND":43,"MOVE":637 }],"buffs":{ "assigned":{ "P1":28,"P2":29 },"drawn":{ "P1":28,"P2":29 } },"hitRates":{ "P1":0.028248587570621,"P2":0.086486486486486 },"kd":{ "P1":0.3125,"P2":3.2 },"luck":{ "avgFirstFlagPickTurn":{ "P1":77.4,"P2":70.6 },"tokenPickupsMove":{ "P1":8,"P2":13 },"tokenRespawnHits":{ "P1":2,"P2":3 } },"progress":{ "P1":266,"P2":265 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":33,"flat":780,"up":42 },{ "down":46,"flat":780,"up":38 }],"wastedAttackRate":{ "P1":0.99435028248588,"P2":0.95675675675676 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":3,"P2":7,"TIMEOUT":0 } } },{ "P1":5,"P2":3,"summary":{ "avgRounds":8.9,"avgTurns":172.7,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":1,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":4,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4.4,"covers":5,"escapes":1,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":5,"P2":3 },"global":{ "actions":[{ "ATTACK":201,"DEFEND":43,"MOVE":622 },{ "ATTACK":201,"DEFEND":43,"MOVE":617 }],"buffs":{ "assigned":{ "P1":31,"P2":27 },"drawn":{ "P1":33,"P2":27 } },"hitRates":{ "P1":0.073684210526316,"P2":0.12234042553191 },"kd":{ "P1":0.60869565217391,"P2":1.6428571428571 },"luck":{ "avgFirstFlagPickTurn":{ "P1":70.8,"P2":88.2 },"tokenPickupsMove":{ "P1":17,"P2":5 },"tokenRespawnHits":{ "P1":0,"P2":4 } },"progress":{ "P1":264,"P2":249 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":56,"flat":737,"up":59 },{ "down":66,"flat":720,"up":61 }],"wastedAttackRate":{ "P1":0.96315789473684,"P2":0.90425531914894 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":5,"P2":5,"TIMEOUT":0 } } },{ "P1":5,"P2":4,"summary":{ "avgRounds":8.8,"avgTurns":168.4,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":1,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":4,"covers":1,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":3,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":6,"covers":0,"escapes":1,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":1 } } },"difficulty":{ "P1":5,"P2":4 },"global":{ "actions":[{ "ATTACK":182,"DEFEND":30,"MOVE":632 },{ "ATTACK":182,"DEFEND":30,"MOVE":628 }],"buffs":{ "assigned":{ "P1":23,"P2":21 },"drawn":{ "P1":24,"P2":21 } },"hitRates":{ "P1":0.02906976744186,"P2":0.13068181818182 },"kd":{ "P1":0.21739130434783,"P2":4.6 },"luck":{ "avgFirstFlagPickTurn":{ "P1":83,"P2":88 },"tokenPickupsMove":{ "P1":13,"P2":10 },"tokenRespawnHits":{ "P1":0,"P2":0 } },"progress":{ "P1":247,"P2":232 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":33,"flat":737,"up":61 },{ "down":67,"flat":717,"up":50 }],"wastedAttackRate":{ "P1":0.98837209302326,"P2":0.90340909090909 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":4,"P2":6,"TIMEOUT":0 } } },{ "P1":5,"P2":5,"summary":{ "avgRounds":8.9,"avgTurns":166.4,"buffEffectivenessTotals":{ "P1":{ "Diagonal Move":{ "diagonalsTaken":2,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":1,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":8.3333333333333,"covers":4,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } },"P2":{ "Diagonal Move":{ "diagonalsTaken":5,"finishesEnabled":0,"laneOpens":0 },"Extra Attack":{ "firstHitKills":0,"secondHitKills":0,"shieldsBrokenOnExtra":0 },"Extra Defend":{ "avgShieldLifeAfter":0,"covers":0,"escapes":0,"preventedSendHome":0 },"Extra Move":{ "distanceGain":0,"laneOpens":0,"twoStepFinishes":0 } } },"difficulty":{ "P1":5,"P2":5 },"global":{ "actions":[{ "ATTACK":180,"DEFEND":35,"MOVE":620 },{ "ATTACK":180,"DEFEND":35,"MOVE":614 }],"buffs":{ "assigned":{ "P1":31,"P2":25 },"drawn":{ "P1":33,"P2":25 } },"hitRates":{ "P1":0.041666666666667,"P2":0.11931818181818 },"kd":{ "P1":0.33333333333333,"P2":3 },"luck":{ "avgFirstFlagPickTurn":{ "P1":86.8,"P2":89.8 },"tokenPickupsMove":{ "P1":14,"P2":8 },"tokenRespawnHits":{ "P1":1,"P2":2 } },"progress":{ "P1":261,"P2":226 },"shieldAvgLife":{ "P1":0,"P2":0 },"threatShifts":[{ "down":42,"flat":727,"up":52 },{ "down":58,"flat":716,"up":51 }],"wastedAttackRate":{ "P1":0.99404761904762,"P2":0.89772727272727 } },"initiative":{ "P1":10,"P2":0 },"matches":10,"wins":{ "P1":6,"P2":4,"TIMEOUT":0 } } }],"run":{ "diffMode":"Sweep P1 in [1,2,3,4,5] × P2 in [1,2,3,4,5]","reroll":true,"run":"20250907T010951Z","seedBase":1757207391 } }
+--- SUMMARY_JSON_END ---

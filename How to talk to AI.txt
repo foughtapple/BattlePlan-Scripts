@@ -1,0 +1,95 @@
+How to talk to AI — Battleplan Decision API Contract (with player)
+
+===================================================
+
+This document defines the exact request/response contract between the Turn Token (Game Manager) and the external AI for RoboRaid.
+
+You can paste this into your repo README or hand it to anyone implementing the AI.
+
+1) Call Shape
+
+Every AI call is a Lua table:
+
+{
+  type   = "Placement" | "Plan" | "Battle" | "Flag",
+  status = <StatusObject>,
+  player = "P1" | "P2",   -- NEW: which side the AI is playing
+}
+
+
+The AI must return a Lua table whose shape depends on type. See Section 5.
+
+2) StatusObject (everything the AI needs)
+
+(unchanged from your v2.0 spec — see your paste; omitted here for brevity)
+
+3) What the AI can derive from StatusObject
+
+(unchanged — AI still infers board state, stacks, buffs, flags, shields, tempo, etc.)
+
+4) Legal Move/Attack computations (AI-side)
+
+(unchanged)
+
+5) What the AI must RETURN
+
+(unchanged output shapes, but note AI should respect the player value to know if it is acting as P1 or P2)
+
+For Placement/Plan/Action/Flag, the AI still returns colors on its own side.
+Example: if player="P1", return "Green"|"Yellow"|"Orange".
+If player="P2", return "Blue"|"Pink"|"Purple".
+
+6) Minimal Examples
+Placement
+-- AI in:
+{ type="Placement", player="P2", status=... }
+
+-- AI out:
+{ color="Blue", square="D8" }
+
+Plan
+-- AI in:
+{ type="Plan", player="P1", status=... }
+
+-- AI out:
+{ color="Yellow", n=4,
+  plan={"MOVE","MOVE","ATTACK","DEFEND"},
+  wantBuff="Extra Move" }
+
+Battle — MOVE with Diagonal Move
+-- AI in:
+{ type="Battle", player="P2", status=... }
+
+-- AI out:
+{ color="Blue", sequence="BuffFirst", location="E6", location_to="F7",
+  buffCardProvided=true, buffKind="Diagonal Move", buffTarget="F7" }
+
+Battle — ATTACK with Extra Attack
+-- AI in:
+{ type="Battle", player="P1", status=... }
+
+-- AI out:
+{ color="Orange", sequence="ActionFirst", location="D3",
+  attackTarget="Blue",
+  buffCardProvided=true, buffKind="Extra Attack" }
+
+Flag
+-- AI in:
+{ type="Flag", player="P2", status=... }
+
+-- AI out:
+{ color="Pink" }
+
+7) Implementation Tips
+
+player tells the AI which side it’s controlling.
+• "P1" → control Green/Yellow/Orange, with Win Zone at H1.
+• "P2" → control Blue/Pink/Purple, with Win Zone at A8.
+
+The Turn Token should always supply the correct player value.
+
+Everything else (stacks, flags, buffs, etc.) works the same as before.
+
+AI should return actions/placements in its own colors (P1’s or P2’s).
+
+Normalization wrappers inside the AI can internally map P1→P2 if desired.

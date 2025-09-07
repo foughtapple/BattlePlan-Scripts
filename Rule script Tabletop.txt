@@ -1,0 +1,117 @@
+BattlePlan — Official Rulebook (v2.0)
+(4-page layout master: Page 1 = Overview • Page 2 = Round Structure • Page 3 = Actions & Buffs • Page 3 = Further Information)
+
+PAGE 1 — OVERVIEW
+==================
+
+OBJECTIVE
+- Enter your opponent’s Defensive Zone to claim their flag, then carry it back and enter your Win Zone to win the game.
+
+BOARD & ZONES
+- 8×8 grid labelled A–H (columns) and 1–8 (rows).
+- Player 1 sits on the “1s” side; their Defensive Zone is the entire row 1 (A1–H1).  Win Zone = H1.
+- Player 2 sits on the “8s” side; their Defensive Zone is the entire row 8 (A8–H8).  Win Zone = A8.
+
+COMPONENTS
+- Pieces: Each player has a Rook, Horse and Bishop. Your second Rook, Horse and Bishop will be used as a card marker. The king is used for flag carriers.
+- Action cards (per player): Move (Black) ×9, Attack (Red) ×6, Defend (Blue) ×3.
+- Buff deck (shared): Extra Move (Black) ×5, Extra Attack (Red) ×5, Extra Defend (Blue) ×5, Diagonal Move (Yellow) ×5.
+- Buff Token ×1 (on‑board pickup that grants a buff draw to hand).
+- Dice: three 6‑sided Game Dice (for round planning); plus 2 token‑placement dice (A–H and 1–8) for the Buff Token’s location.
+
+SETUP
+1) Place the Buff Token: roll A–H and 1–8; place the token on that square. The first token location can not be in a defensive zone
+2) Each player draws 2 buff cards into their hand.
+3) Decide the first player: roll the three Game Dice; the higher total goes first. If tied, re‑roll until there’s a winner.
+4) Piece placement: players alternate placing their 3 pieces anywhere in their own Defensive Zone until all six pieces are placed.
+
+PAGE 2 — ROUND STRUCTURE
+=========================
+
+Each round has two phases: A) Plan, then B) Action. Alternate who goes first each round.
+
+A) Plan
+1) The player going first this round rolls all three Game Dice (e.g., 6, 4, 2).
+2) Dice assigning:
+   • Each player will use these 3 values to assign to their 3 pieces, picking one at a time alternating turns. Both players will end up using each rolled value exactly once.
+   • Example: Dice = 6, 4, 2. P1 assigns 6 to Rook; P2 assigns 4 to Horse; P1 assigns 2 to Bishop; P2 assigns 6 to Bishop; P1 assigns 4 to Horse; P2 assigns 2 to Rook.
+3) For each of your pieces, place that many action cards in that pieces card holder in use order with the pieces first action on the left. The chosen die value equals the number of actions that piece will have this round.
+   • Card caps Per‑piece each round: up to 3× MOVE, up to 2× ATTACK, up to 1× DEFEND.
+4) Optionally assign buffs from hand: You may assign 1 buff card per piece to the card holder each round. Place it with that piece. Unused assigned buffs are discarded at the end of the round.
+   • Any buff card drawn from the on‑board Buff Token during the round goes to your hand and cannot be used that round.
+
+B) Battle Phase (ALTERNATING REVEALS)
+1) Starting with this round’s first player, players alternate turns. On your turn, choose any one of your pieces that still has unrevealed actions and reveal the top action on that piece’s stack.
+2) If that piece has a buff assigned for this round, you may reveal it on any of your turns BEFORE or AFTER resolving the revealed action. Then discard the buff.
+3) Resolve the action (see “Actions” on Page 3). If any part of an action would be illegal or impossible at the moment it would occur, that part simply has no effect. Your turn is still spent.
+4) Continue alternating reveals until all pieces on both sides are out of actions. Then the round ends.
+5) Start a new round (go back to the Plan phase). Whoever goes last in the Battle Phase is now first in the Plan phase.
+
+PAGE 3 — ACTIONS & BUFFS
+=========================
+
+ACTIONS
+-----------------------------------
+MOVE (max 3 per piece)
+• Move you're piece 1 square orthogonally (up/down/left/right). You may not move off the board or into an occupied square. If no orthogonal move is available, the move has no effect.
+
+ATTACK (max 2 per piece)
+• Choose one enemy in any adjacent square (orthogonal or diagonal) and kill it; remove it from the board immediately. (Friendly fire is allowed by choice)
+• If no adjacent enemy exists when ATTACK resolves, the attack has no effect.
+
+DEFEND (max 1 per piece)
+• Move 1 square orthogonally and gain a shield.
+• The shield lasts until this piece’s next reveal. A shield is destroyed by one attack.
+• If you cannot legally move 1 orthogonal square, the move has no effect and a shield is applied.
+
+BUFF CARDS (assign up to 1 per piece each round; discard after use or at end of round if unused)
+------------------------------------------------------------------------------------------------
+• Buffs are revealed with one of that piece’s action reveal and may be resolved either BEFORE or AFTER that action.
+• Each step or attack granted by a buff must be legal at the moment it is taken.
+• Unused buff cards assigned to pieces still discard.
+• During the round, stepping on the Buff Token draws a buff to your HAND for use in a future round (you cannot assign or use it this round).
+• Once the buff deck is exhausted, shuffle discarded cards into the deck.
+• Effects:
+  – Extra Move (Black): Take +1 extra orthogonal move step.
+  – Extra Attack (Red): Make +1 extra adjacent attack (may be a different target).
+  – Extra Defend (Blue): Resolve a second DEFEND (move 1 orthogonally, then don a shield). (Paired with a defend applies only 1 shield)
+  – Diagonal Move (Gold): Take +1 diagonal move step.
+
+PAGE 4 — Further Information
+=========================
+
+BUFF TOKEN
+----------
+• When any piece enters the Buff Token square: that piece’s controller immediately draws 1 buff card to hand, then rolls the 8 sided dice to reposition the token.
+• If the new location is occupied: the occupying piece’s player draws 1 buff, then re‑rolls to find a new location until you place it on an empty square.
+
+ELIMINATIONS & RESPAWN
+----------------------
+• When a piece is killed, remove it from the board immediately. Any remaining actions on its stack this round are still flipped one by one on your turn but have no effect.
+• At the START of the next round (before dice are rolled), respawn your dead pieces on the “left‑most” available square of your Defensive Zone:
+  – Player 1 (row 1): scan from A1 → H1.
+  – Player 2 (row 8): scan from H8 → A8.
+
+FLAGS & WINNING
+---------------
+• Claim the opponent’s flag by entering your opponents Defensive Zone. Mark that piece as the carrier.
+• A carrier may move, attack, defend, and draw from the Buff Token normally. Friendly fire (including on a carrier) is allowed.
+• If your carrier dies, the flag becomes unclaimed (it does not remain on the board). To claim it again, you must re‑enter the opponent’s Defensive Zone.
+• If you have a piece in the opponents defensive zone when another of that players piece loses the flag, you automatically pick it up (Player chooses if there is two in the opponents defensive zone).
+• You win immediately when your flag carrier enters your Win Zone square (P1: H1 • P2: A8).
+
+TIPS & TRICKS
+---------------
+• Where should I collect the flag? Collecting the flag from the same side as your win zone creates a 7 move pathway to your win zone however, the opponent spawns in that square which can make it hard to capture the flag. Collecting the flag from your opponents win zone, is the furthest from the spawn point however this is a 14 move pathway to your win zone. This means the flag capture gets easier further left of the board though the flag return gets harder.
+• Using buff cards correctly is essential to winning this game. Aiming for the token and saving them up for a few confirmed kills can get you an uncatchable head start in returning with the flag. 
+• Going last has its advantage. You will be first in the next round meaning you get two turns in a row. Pair that with a buff card each round and you have 4 actions before your opponent has a turn. Your opponent then gets this benefit in the next round.
+
+Tabletop
+--------------
+• Set-up - Right click the Buff token to randomise location. Deal two buff cards
+• Plan phase: Click to change your cards. Your opponent can't see them. Assign dice values for each piece at once. Assign blank for unused cards. When all of your pieces cards are selected, right click any card and click reveal all (This will allow you to click to reveal).
+• Battle Phase: Click the card your revealing and resolve your action. Right click pieces to set and unset flags and shields. Buff token will auto relocate and give players cards. Right click and press reset all at the end of the Battle Phase.
+
+AI Opponent
+--------------
+• Right-click the Game Token to start the game. At the end of your turn, click the token. You must resolve everything on your turn including any pieces flags and shields, kills. End of rounds require an extra click when the computer goes last. Right clicking the token resets the game in full. Set difficulty from 1 to 5 by right clicking
