@@ -15,8 +15,8 @@ P1_DIFFICULTY                  = 0            -- 0 => sweep over P1_DIFFICULTY_S
 P2_DIFFICULTY                  = 0            -- 0 => sweep over P1_DIFFICULTY_SET × P2_DIFFICULTY_SET
 P1_DIFFICULTY_SET              = {1,2,3,4,5}
 P2_DIFFICULTY_SET              = {1,2,3,4,5}
-GAMES_PER_PAIR                 = 10
-MAX_ROUNDS_PER_MATCH           = 25           -- stop after this many rounds if no winner
+GAMES_PER_PAIR                 = 50
+MAX_ROUNDS_PER_MATCH           = 50           -- stop after this many rounds if no winner
 
 -- === AI RNG controls ===
 SAME_SEED = true                              -- flip to false to give P1/P2 different streams
@@ -1365,10 +1365,12 @@ local function new_writer(fh)
     f = fh, turn_index = 0, prev_flat = nil
   }
   function w:_w(s)
+    if not WRITE_MATCH_LOG then return end
     self.f:write(s)
     if s:sub(-1) ~= "\n" then self.f:write("\n") end
     self.f:flush()
   end
+
 
   function w:header(meta)
     self:_w(string.format("=== BattlePlan Sim Log v%s ===", tostring(LOG_VERSION)))
@@ -2667,3 +2669,4 @@ end
 main()
 
 --#endregion Part 3/3
+

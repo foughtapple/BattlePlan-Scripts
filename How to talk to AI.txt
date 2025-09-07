@@ -1,95 +1,149 @@
-How to talk to AI — Battleplan Decision API Contract (with player)
-
-===================================================
+How to talk to AI — Battleplan Decision API Contract (with player + RNG)
+=======================================================================
 
 This document defines the exact request/response contract between the Turn Token (Game Manager) and the external AI for RoboRaid.
 
 You can paste this into your repo README or hand it to anyone implementing the AI.
 
-1) Call Shape
+---
+
+## 1) Call Shape
 
 Every AI call is a Lua table:
 
+```lua
 {
   type   = "Placement" | "Plan" | "Battle" | "Flag",
   status = <StatusObject>,
-  player = "P1" | "P2",   -- NEW: which side the AI is playing
+  player = "P1" | "P2",   -- which side the AI is playing
 }
-
-
 The AI must return a Lua table whose shape depends on type. See Section 5.
 
 2) StatusObject (everything the AI needs)
+Same as v2.0 plus one new field: a deterministic RNG seed you can use for reproducible choices.
 
-(unchanged from your v2.0 spec — see your paste; omitted here for brevity)
+NEW: Deterministic RNG seed
+lua
+Copy code
+status.meta.rng = {
+  player = "P1" | "P2",  -- side the seed applies to (AI’s side)
+  seed   = <integer>,    -- numeric seed; stable for the entire match
+  seedHex = "<hex>",     -- same seed as hex string (convenience)
+}
+
+-- Back-compat alias (identical content):
+status.rng = status.meta.rng
+Semantics
+
+The seed is created at Start Game and remains constant for the whole match.
+
+A new seed is generated on Reset Board / Start Game.
+
+Use it to make your AI’s stochastic choices deterministic (tie-breakers, randomization, etc.).
+
+It’s not a security feature; it’s purely for determinism and reproducibility.
+
+Implementation note: the Turn Token currently sends both status.meta.rng and a top-level alias status.rng so older AIs can read status.rng without breaking.
+
+All other StatusObject fields (pieces, stacks, buffs, flags, shields, dice, budgets, etc.) are unchanged from v2.0.
 
 3) What the AI can derive from StatusObject
-
-(unchanged — AI still infers board state, stacks, buffs, flags, shields, tempo, etc.)
+Unchanged — infer board state, stacks, buffs, flags, shields, tempo, etc. Use the seed for any internal randomness to keep outcomes reproducible.
 
 4) Legal Move/Attack computations (AI-side)
-
-(unchanged)
+Unchanged.
 
 5) What the AI must RETURN
+Unchanged output shapes. The AI should respect the player value to know which side it’s acting as.
+For Placement/Plan/Battle/Flag, return colors on your side:
 
-(unchanged output shapes, but note AI should respect the player value to know if it is acting as P1 or P2)
+player="P1" → "Green" | "Yellow" | "Orange"
 
-For Placement/Plan/Action/Flag, the AI still returns colors on its own side.
-Example: if player="P1", return "Green"|"Yellow"|"Orange".
-If player="P2", return "Blue"|"Pink"|"Purple".
+player="P2" → "Blue" | "Pink" | "Purple"
 
-6) Minimal Examples
+6) Minimal Examples (now showing rng)
 Placement
+
+lua
+Copy code
 -- AI in:
-{ type="Placement", player="P2", status=... }
+{ type="Placement", player="P2", status={
+    meta={ rng={ player="P2", seed=1725652345123, seedHex="193c6b1f733" } },
+    rng = { player="P2", seed=1725652345123, seedHex="193c6b1f733" }, -- alias
+    -- ...rest of status...
+  }
+}
 
 -- AI out:
 { color="Blue", square="D8" }
-
 Plan
+
+lua
+Copy code
 -- AI in:
-{ type="Plan", player="P1", status=... }
+{ type="Plan", player="P1", status={
+    meta={ rng={ player="P1", seed=987654321, seedHex="3ade68b1" } },
+    rng = { player="P1", seed=987654321, seedHex="3ade68b1" },
+    -- ...rest of status...
+  }
+}
 
 -- AI out:
 { color="Yellow", n=4,
   plan={"MOVE","MOVE","ATTACK","DEFEND"},
   wantBuff="Extra Move" }
-
 Battle — MOVE with Diagonal Move
+
+lua
+Copy code
 -- AI in:
-{ type="Battle", player="P2", status=... }
+{ type="Battle", player="P2", status={
+    meta={ rng={ player="P2", seed=1725652345123, seedHex="193c6b1f733" } },
+    rng = { player="P2", seed=1725652345123, seedHex="193c6b1f733" },
+    -- ...rest of status...
+  }
+}
 
 -- AI out:
 { color="Blue", sequence="BuffFirst", location="E6", location_to="F7",
   buffCardProvided=true, buffKind="Diagonal Move", buffTarget="F7" }
-
 Battle — ATTACK with Extra Attack
+
+lua
+Copy code
 -- AI in:
-{ type="Battle", player="P1", status=... }
+{ type="Battle", player="P1", status={
+    meta={ rng={ player="P1", seed=987654321, seedHex="3ade68b1" } },
+    rng = { player="P1", seed=987654321, seedHex="3ade68b1" },
+    -- ...rest of status...
+  }
+}
 
 -- AI out:
 { color="Orange", sequence="ActionFirst", location="D3",
   attackTarget="Blue",
   buffCardProvided=true, buffKind="Extra Attack" }
-
 Flag
+
+lua
+Copy code
 -- AI in:
-{ type="Flag", player="P2", status=... }
+{ type="Flag", player="P2", status={
+    meta={ rng={ player="P2", seed=1725652345123, seedHex="193c6b1f733" } },
+    rng = { player="P2", seed=1725652345123, seedHex="193c6b1f733" },
+    -- ...rest of status...
+  }
+}
 
 -- AI out:
 { color="Pink" }
-
 7) Implementation Tips
+player tells the AI which side it controls.
+• "P1" → control Green/Yellow/Orange, Win Zone at H1.
+• "P2" → control Blue/Pink/Purple, Win Zone at A8.
 
-player tells the AI which side it’s controlling.
-• "P1" → control Green/Yellow/Orange, with Win Zone at H1.
-• "P2" → control Blue/Pink/Purple, with Win Zone at A8.
+Use status.meta.rng.seed (or status.rng.seed) to seed your RNG so your AI is deterministic within a match.
 
-The Turn Token should always supply the correct player value.
+Everything else (stacks, flags, buffs, shields, budgets) works the same as before.
 
-Everything else (stacks, flags, buffs, etc.) works the same as before.
-
-AI should return actions/placements in its own colors (P1’s or P2’s).
-
-Normalization wrappers inside the AI can internally map P1→P2 if desired.
+Return colors/actions for your side only.
